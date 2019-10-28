@@ -1,0 +1,225 @@
+Round,SecondsIntoRound,SecondsLastRoundAction,cmTotHitsR-A,cmTotHitsL-A,cmTotHitsM-A,Hits-Recvd-A,Hits-Lnd-A,Hits-Mssd-A,cmTotHitsR-E,cmTotHitsL-E,cmTotHitsM-E,Hits-Recvd-E,Hits-Lnd-E,Hits-Mssd-E,Time,ArseFighterActionReactions,ErosaFightersActionsReactions
+1,6,6,0,0,0,,,,0,0,1,,,1,9:41,,misses standing head strike front kick
+1,19,13,0,0,0,,,,0,0,2,,,1,9:54,,misses standing head strike front kick
+1,21,2,0,0,0,,,,0,0,3,,,1,9:56,,misses standing head strike R muay thai kick
+1,24,3,1,0,0,1,,,0,1,3,,1,,9:59,,lands low leg muay thai kick
+1,36,12,1,0,1,,,1,0,1,4,,,1,10:11,misses R jab,misses L jab
+1,39,3,2,0,1,1,,,0,2,4,,1,,10:14,,lands standing L Body shot muay thai kick R leg 
+1,46,7,2,0,2,,,1,0,2,4,,,,10:21,misses R jab,
+1,49,3,2,0,2,,,,0,2,5,,,1,10:24,,misses L jab
+1,51,2,2,0,2,,,,0,2,6,,,1,10:26,,misses low muay thai kick R leg
+1,57,6,2,0,3,,,1,0,2,6,,,,10:32,misses standing head kick,
+1,61,4,2,0,3,,,,0,2,7,,,1,10:36,,misses front head kick
+1,76,15,2,0,3,,,,0,2,8,,,1,10:51,,misses L jab
+1,80,4,2,0,3,,,,0,2,9,,,1,10:55,,misses L hook to head
+1,88,8,2,0,3,,,,0,2,10,,,1,11:03,,misses front head kick
+1,89,1,2,0,3,,,,0,2,11,,,1,11:04,blocks head strike-power shot,misses standing R power shot to head
+1,103,14,2,0,3,,,,0,2,12,,,1,11:18,,misses front R head kick
+1,104,1,2,0,3,,,,0,2,13,,,1,11:19,ducks other fighter,misses L hook to head
+1,106,2,3,0,4,1,,1,0,3,13,,1,,11:21,misses L power shot,clinches neck
+1,107,1,4,0,4,1,,,0,4,13,,1,,11:22,,lands L knee to body shot
+1,121,14,4,0,4,,,,0,4,14,,,1,11:36,grabs R hand the R leg low shot,misses R low body front kick
+1,127,6,4,0,5,,,1,0,4,14,,,,11:42,misses R jab,ducks other fighter
+1,132,5,4,0,6,,,1,0,4,15,,,1,11:47,misses R jab,misses L power shot
+1,145,13,4,0,8,,,2,0,4,15,,,,12:00,"misses R jab, misses L head power shot",
+1,152,7,4,0,9,,,1,0,4,16,,,1,12:07,misses L head power shot,misses R head jab
+1,153,1,4,0,10,,,1,0,4,17,,,1,12:08,misses R hook to head,misses L jab
+1,161,8,5,0,10,1,,,0,5,17,,1,,12:16,,lands front kick body shot
+1,177,16,5,2,10,,2,,2,5,17,2,,,12:32,"lands R jab to head, lands L power shot to head",
+1,179,2,6,2,10,1,,,2,6,17,,1,,12:34,,lands body shot R cross
+1,181,2,7,2,10,1,,,2,7,17,,1,,12:36,,"lands R power shot, misses L hook to head"
+1,184,3,7,3,10,,1,,3,7,17,1,,,12:39,lands R jab to head,
+1,185,1,7,3,11,,,1,3,7,17,,,,12:40,misses L power shot to chin,
+1,189,4,7,3,11,,,,3,7,18,,,1,12:44,,misses R jab to head
+1,190,1,7,4,12,,1,1,3,7,18,,,,12:45,"misses R hook to head, lands L cross","ducks other fighter, lands L power shot to head"
+1,195,5,7,5,12,,1,,4,7,18,1,,,12:50,lands L power shot to body,
+1,205,10,7,5,12,,,,4,7,19,,,1,13:00,,misses L power shot
+1,206,1,7,5,14,,,2,4,7,20,,,1,13:01,"misses R jab, misses L power shot to chin",misses L hook to head
+1,212,6,8,5,14,1,,,4,8,20,,1,,13:07,,lands body shot R muay thai kick
+1,214,2,8,6,14,,1,,5,8,20,1,,,13:09,lands clinche R arm of opponent and body,R arm clinched
+1,218,4,9,6,14,1,,,5,9,20,,1,,13:13,,lands L hammer strike to R thigh in clinch
+1,226,8,9,6,15,,,1,5,9,20,,,,13:21,misses clinch ,
+1,227,1,10,6,15,1,,,5,10,20,,1,,13:22,,lands L power shot to head
+1,234,7,10,7,15,,1,,6,10,20,1,,,13:29,lands R front kick to body,
+1,239,5,10,8,15,,1,,7,10,20,1,,,13:34,lands R jab to head,
+1,241,2,10,8,15,,,,7,10,21,,,1,13:36,ducks other fighter,misses L hook to head
+1,242,1,10,9,15,,1,,8,10,21,1,,,13:37,lands R jab to head,
+1,243,1,10,9,15,,,,8,10,22,,,1,13:38,,misses R cross to head
+1,244,1,10,9,16,,,1,8,10,22,,,,13:39,misses R jab to head,ducks other fighter
+1,254,10,10,9,17,,,1,8,10,23,,,1,13:49,misses R jab to head,misses L front kick
+1,255,1,10,10,17,,1,,9,10,23,1,,,13:50,lands L power shot to head,
+1,256,1,11,10,17,1,,,9,11,23,,1,,13:51,,"clinches neck, lands R upper cut"
+1,259,3,11,10,17,,,,9,11,25,,,2,13:54,,"misses R jab to head, misses L hook to head"
+1,262,3,12,10,17,1,,,9,12,25,,1,,13:57,,lands L body hook
+1,263,1,12,10,17,,,,9,12,26,,,1,13:58,blocks head strike-R muay thai kick,misses L head shot R muay thai kick
+1,264,1,12,10,17,,,,9,12,27,,,1,13:59,,misses R cross to head
+1,265,1,12,11,17,,1,,10,12,27,1,,,14:00,lands R jab to chin,
+1,266,1,12,12,18,,1,1,10,12,28,,,1,14:01,"misses L hook to head, lands R jab to head",misses R hook to head
+1,267,1,12,12,19,,,1,10,12,28,,,,14:02,misses L hook to head,
+1,273,6,12,13,19,,1,,11,12,29,1,,1,14:08,lands R jab to head,misses L jab
+1,274,1,12,13,20,,,1,11,12,29,,,,14:09,misses R jab,
+1,275,1,12,13,21,,,1,11,12,30,,,1,14:10,misses L front kick,misses R jab to head
+1,276,1,12,13,21,,,,11,12,31,,,1,14:11,,"misses L power shot, misses R jab to head"
+1,284,8,12,13,21,,,,11,12,32,,,1,14:19,,misses R muay thai head kick
+1,287,3,12,13,21,,,,11,12,33,,,1,14:22,blocks L front kick body shot,misses L front kick body shot
+1,288,1,12,14,21,,1,,11,12,33,,,,14:23,delivers take down,
+1,294,6,13,14,21,1,,,11,13,33,,1,,14:29,,lands low front kick from the ground
+1,295,1,13,14,21,,,,11,13,34,,,1,14:30,,misses high front kick from the ground
+1,297,2,14,14,21,1,,,11,14,34,,1,,14:32,,lands L hook to head standing
+1,302,5,14,14,21,,,,11,14,34,,,,14:37,tap gloves round ends,tap gloves round ends
+2,1,0,0,0,0,,,,0,0,0,,,,15:49,tap gloves round begins,tap gloves round begins
+2,2,1,0,0,1,,,1,0,0,1,,,1,15:50,misses R jab,misses L jab
+2,3,1,0,1,1,,1,,1,0,1,1,,,15:51,lands L power shot,
+2,4,1,0,1,1,,,,1,0,2,,,1,15:52,ducks other fighter,misses R hook to head
+2,6,2,0,2,1,,1,,2,0,2,1,,,15:54,lands body shot R jab,
+2,8,2,1,2,1,1,,,2,1,2,,1,,15:56,,lands body shot R muay thai kick
+2,9,1,2,2,2,1,,1,2,2,2,,1,,15:57,misses R hook to head,"lands R jab head shot, ducks other fighter"
+2,16,7,2,2,2,,,,2,2,3,,,1,16:04,,misses low muay thai kick R leg
+2,18,2,2,2,3,,,1,2,2,3,,,,16:06,misses low muay thai kick L leg,
+2,23,5,2,2,4,,,1,2,2,3,,,,16:11,misses R jab to head,
+2,24,1,2,2,5,,,1,2,2,3,,,,16:12,misses R hook to head,ducks other fighter
+2,25,1,2,3,5,,1,,3,2,4,1,,1,16:13,lands R upper cut to head,misses R jab to head
+2,43,18,2,3,5,,,,3,2,5,,,1,16:31,blocks L body shot muay thai kick,misses body shot R muay thai kick
+2,47,4,2,3,5,,,,3,2,6,,,1,16:35,,missed R hook to body
+2,49,2,2,4,5,,1,,4,2,7,1,,1,16:37,"lands R jab to body, ducks other fighter",misses L hook to head
+2,52,3,2,4,6,,,1,4,2,7,,,,16:40,misses L kick to head,blocks R head kick 
+2,66,14,2,4,6,,,,4,2,8,,,1,16:54,ducks other fighter,misses R jab to head
+2,67,1,2,4,6,,,,4,2,9,,,1,16:55,ducks other fighter,misses L cross to head
+2,68,1,2,4,7,,,1,4,2,9,,,,16:56,misses clinch,
+2,73,5,2,4,8,,,1,4,2,9,,,,17:01,misses R jab to head,
+2,74,1,2,4,8,,,,4,2,10,,,1,17:02,blocks body shot front kick,misses body shot front kick
+2,75,1,2,4,8,,,,4,2,11,,,1,17:03,ducks other fighter,misses L hook to head
+2,76,1,2,4,9,,,1,4,2,11,,,,17:04,misses body clinch,blocks body clinch
+2,96,20,2,4,10,,,1,4,2,11,,,,17:24,misses R hook to head,
+2,102,6,2,4,10,,,,4,2,12,,,1,17:30,blocks R jab to head,misses R jab to head
+2,103,1,2,4,10,,,,4,2,13,,,1,17:31,ducks other fighter,misses R hook to head
+2,105,2,2,4,11,,,1,4,2,14,,,1,17:33,misses R hook to head,misses R hook to head
+2,106,1,2,4,11,,,,4,2,15,,,1,17:34,blocks L hook to head,"misses L hook to head, blocks L punch to head"
+2,108,2,2,5,11,,1,,5,2,15,1,,,17:36,lands low front L kick,
+2,115,7,2,6,11,,1,,6,2,15,1,,,17:43,lands low left front kick,
+2,119,4,2,6,11,,,,6,2,16,,,1,17:47,blocks R hook to head,misses R hook to head
+2,121,2,2,6,11,,,,6,2,17,,,1,17:49,,misses R front kick to body
+2,127,6,2,6,11,,,,6,2,18,,,1,17:55,ducks other fighter,misses R cross to head
+2,129,2,3,6,11,1,,,6,3,18,,1,,17:57,,lands R low kick 
+2,131,2,3,6,11,,,,6,3,19,,,1,17:59,ducks other fighter,misses L jab to head
+2,132,1,3,6,11,,,,6,3,20,,,1,18:00,ducks other fighter,misses R cross to head
+2,133,1,3,7,11,,1,,7,3,20,1,,,18:01,lands R jab to head,
+2,135,2,3,7,12,,,1,7,3,20,,,,18:03,misses R jab to head,ducks other fighter
+2,138,3,3,7,12,,,,7,3,21,,,1,18:06,ducks other fighter,misses R cross to head
+2,139,1,4,7,12,1,,,7,4,21,,1,,18:07,,lands L knee to body clinch
+2,140,1,4,7,12,,,,7,4,21,,,,18:08,clinch attempted take down,blocks clinch takedown
+2,148,8,4,7,14,,,2,7,4,22,,,1,18:16,"misses R jab to head, misses R jab to head","misses L jab to head, lands R jab head shot"
+2,150,2,4,8,14,,1,,8,4,22,1,,,18:18,lands L power shot to chin,
+2,153,3,4,9,14,,1,,9,4,22,1,,,18:21,lands L body shot front kick,
+2,155,2,4,9,14,,,,9,4,23,,,1,18:23,,misses R front kick to body
+2,166,11,4,9,14,,,,9,4,24,,,1,18:34,,misses R upper cut to head
+2,167,1,4,9,14,,,,9,4,25,,,1,18:35,,misses L cross to head
+2,169,2,4,9,15,,,1,9,4,26,,,1,18:37,misses R jab to head,misses L cross to head
+2,170,1,4,10,15,,1,,10,4,26,1,,,18:38,lands L power shot to head,
+2,171,1,4,11,15,,1,,11,4,26,1,,,18:39,lands R front kick to body,
+2,173,2,4,11,15,,,,11,4,27,,,1,18:41,ducks other fighter,misses R jab to head
+2,174,1,4,11,15,,,,11,4,28,,,1,18:42,ducks other fighter,misses L jab
+2,175,1,4,11,17,,,2,11,4,28,,,,18:43,"misses R jab to head, misses L cross to head","ducks other fighter, ducks other fighter"
+2,178,3,4,11,17,,,,11,4,29,,,1,18:46,blocks head shot R muay thai kick,misses R muay thai head kick
+2,179,1,4,11,18,,,1,11,4,30,,,1,18:47,misses R jab to head,misses L jab to head
+2,186,7,5,11,19,1,,1,11,5,30,,1,,18:54,misses R jab to head,lands R cross to head
+2,187,1,5,11,19,,,,11,5,31,,,1,18:55,blocks body shot R muay thai kick,misses R body shot muay thai kick
+2,189,2,5,11,19,,,,11,5,32,,,1,18:57,ducks other fighter,misses body shot L front kick
+2,190,1,5,12,19,,1,,12,5,32,1,,,18:58,lands body shot L power shot,
+2,197,7,5,12,20,,,1,12,5,32,,,,19:05,misses low R front kick,
+2,200,3,5,12,20,,,,12,5,33,,,1,19:08,blocks L head shot muay thai kick,misses R muay thai head kick
+2,202,2,5,12,21,,,1,12,5,33,,,,19:10,misses low L inner leg kick with L muay thai kick,
+2,207,5,5,12,21,,,,12,5,34,,,1,19:15,,misses R muay thai low leg shot
+2,211,4,5,12,21,,,,12,5,36,,,2,19:19,ducks other fighter,"misses R cross to head, misses left jab"
+2,213,2,5,12,22,,,1,12,5,36,,,,19:21,misses R jab to head,ducks other fighter
+2,214,1,5,12,23,,,1,12,5,36,,,,19:22,misses L power shot to chin,
+2,219,5,5,12,24,,,1,12,5,37,,,1,19:27,misses L body shot front kick with L kick,"blocks body shot front kick, misses L cross to head"
+2,221,2,5,12,25,,,1,12,5,37,,,,19:29,misses R jab to head,
+2,223,2,5,12,26,,,1,12,5,37,,,,19:31,misses R jab to head,
+2,224,1,5,12,27,,,1,12,5,37,,,,19:32,misses L power shot to chin,ducks other fighter
+2,225,1,5,12,27,,,,12,5,38,,,1,19:33,,misses R upper cut to head
+2,227,2,5,12,27,,,,12,5,39,,,1,19:35,,misses L front kick body shot
+2,229,2,5,12,28,,,1,12,5,40,,,1,19:37,"ducks other fighter, misses R cross to head","misses R cross to head, ducks other fighter"
+2,231,2,5,12,28,,,,12,5,41,,,1,19:39,blocks attempted take down,misses attempted take down at R knee
+2,232,1,5,12,28,,,,12,5,42,,,1,19:40,,misses L hook to head
+2,233,1,5,13,28,,1,,13,5,43,1,,1,19:41,"lands R jab, ducks other fighter",misses R hook to head
+2,235,2,5,13,28,,,,13,5,44,,,1,19:43,ducks other fighter,misses R super man punch to head
+2,236,1,5,13,29,,,1,13,5,44,,,,19:44,misses R jab to head,
+2,239,3,5,13,30,,,1,13,5,44,,,,19:47,misses R jab to head,ducks other fighter
+2,241,2,5,14,30,,1,,14,5,44,1,,,19:49,lands R jab to head,
+2,245,4,5,15,30,,1,,15,5,45,1,,1,19:53,lands R body shot front kick,misses L cross to head
+2,247,2,5,15,31,,,1,15,5,46,,,1,19:55,"ducks other fighter, misses R jab to head","misses R cross to head, ducks other fighter"
+2,255,8,5,16,31,,1,,16,5,46,1,,,20:03,lands R body shot front kick,
+2,257,2,5,16,32,,,1,16,5,46,,,,20:05,misses R jab,ducks other fighter
+2,258,1,5,16,32,,,,16,5,47,,,1,20:06,ducks other fighter,misses R cross to head
+2,259,1,5,16,33,,,1,16,5,48,,,1,20:07,"ducks other fighter, misses R jab","misses L hook to head, blocks R jab to head"
+2,260,1,5,16,33,,,,16,5,49,,,1,20:08,blocks clinch knee body shot,misses knee body shot clinch
+2,264,4,5,16,33,,,,16,5,50,,,1,20:12,,misses flying knee body shot
+2,267,3,5,16,33,,,,16,5,50,,,,20:15,misses body clinch,
+2,272,5,6,16,33,1,,,16,6,50,,1,,20:20,,lands L front kick body shot
+2,275,3,6,16,34,,,1,16,6,51,,,1,20:23,misses R jab to head,misses L jab to head
+2,276,1,7,16,35,1,,1,16,7,51,,1,,20:24,misses R jab to chin,lands R cross to chin
+2,277,1,7,16,35,,,,16,7,52,,,1,20:25,ducks other fighter,misses L hook to head
+2,280,3,7,16,35,,,,16,7,53,,,1,20:28,clinch avoids body shot knee,misses body shot knee
+2,297,17,7,16,35,,,,16,7,54,,,1,20:45,"ducks other fighter, gets out of clinch",misses L hook to head
+2,302,5,7,16,35,,,,16,7,54,,,,20:50,tap gloves end of round,tap gloves end of round
+3,1,0,0,0,0,,,,0,0,0,,,,22:04,tap glove beginning of round,tap gloves beginning of round
+3,2,1,0,1,1,,1,1,0,0,1,,,1,22:05,"misses R jab, lands L power shot to head","misses Left power shot to head, ducks other fighter"
+3,3,1,0,1,1,,,,0,0,2,,,1,22:06,,"misses R upper cut to head, misses L cross to head"
+3,5,2,0,1,2,,,1,0,0,2,,,,22:08,misses R jab to head,ducks other fighter
+3,6,1,0,1,3,,,1,0,0,2,,,,22:09,misses R jab to head,ducks other fighter
+3,7,1,0,2,3,,1,,1,0,4,1,,2,22:10,"lands R jab to body, ducks other fighter","misses R cross to head, misses L hook to head"
+3,10,3,0,2,4,,,1,1,0,5,,,1,22:13,"misses head shot L muay thai kick, ducks other fighter","blocks R head shot muay thai kick, misses R cross to head"
+3,11,1,0,3,4,,1,,2,0,5,1,,,22:14,lands R jab to head,
+3,13,2,0,3,5,,,1,2,0,6,,,1,22:16,"blocks L head shot muay thai kick, misses L cross to head",misses R muay thai kick to head
+3,14,1,0,3,5,,,,2,0,7,,,1,22:17,ducks other fighter,misses R cross to head
+3,15,1,0,4,5,,1,,3,0,9,1,,2,22:18,"lands L jab, ducks other fighter","misses R cross to head, misses L hook to head"
+3,16,1,0,5,5,,1,,4,0,9,1,,,22:19,lands L hook to body,
+3,17,1,0,5,5,,,,4,0,10,,,1,22:20,blocks clinch,misses clinch
+3,19,2,0,5,6,,,1,4,0,10,,,,22:22,misses R jab to head,
+3,21,2,0,5,7,,,1,4,0,10,,,,22:24,misses R jab to head,blocks R jab to head
+3,24,3,0,5,9,,,2,4,0,11,,,1,22:27,"misses R jab to head, misses body shot L front kick","misses L jab to head, blocks body shot front kick"
+3,27,3,0,5,10,,,1,4,0,11,,,,22:30,misses L power shot to head,ducks other fighter
+3,29,2,0,5,11,,,1,4,0,11,,,,22:32,misses R jab to head,
+3,32,3,0,5,12,,,1,4,0,11,,,,22:35,misses R front kick to body,blocks body shot front kick
+3,35,3,0,6,12,,1,,5,0,12,1,,1,22:38,lands L muay thai kick to body,misses R cross to head
+3,36,1,0,6,12,,,,5,0,12,,,,22:39,,attempts clinch
+3,38,2,0,6,12,,,,5,0,13,,,1,22:41,,misses clinch
+3,41,3,0,6,12,,,,5,0,14,,,1,22:44,ducks other fighter,misses R jab to head
+3,43,2,0,6,13,,,1,5,0,14,,,,22:46,misses R jab to head,blocks R jab to head
+3,50,7,0,7,13,,1,,6,0,14,1,,,22:53,lands L power shot to chin,
+3,51,1,1,7,13,1,,,6,1,14,,1,,22:54,,lands L jab to head
+3,52,1,1,8,13,,1,,7,1,15,1,,1,22:55,"lands body shot L power shot, ducks other fighter",misses L hook to head
+3,56,4,2,8,13,1,,,7,2,15,,1,,22:59,,lands head shot R cross
+3,57,1,2,8,14,,,1,7,2,17,,,2,23:00,"ducks other fighter, misses R jab to head","misses R jab to head, misses L jab to head"
+3,58,1,2,9,14,,1,,8,2,17,1,,,23:01,lands R jab to head,
+3,59,1,2,10,14,,1,,9,2,17,1,,,23:02,lands R jab to head,
+3,60,1,2,10,14,,,,9,2,18,,,1,23:03,,misses R hook to head
+3,65,5,3,11,14,1,1,,10,4,18,1,2,,23:08,"lands L cross to head, ducks other fighter, misses R jab to head","lands R upper cut to head, lands R cross to head"
+3,66,1,3,11,14,,,,10,4,19,,,1,23:09,ducks other fighter,misses L hook to head
+3,67,1,4,12,14,1,1,,11,5,19,1,1,,23:10,lands R hook to head,lands R cross to head
+3,68,1,4,13,14,,1,,12,5,20,1,,1,23:11,"ducks other fighter, lands L hook to body",misses L hook to head
+3,69,1,4,13,15,,,1,12,5,20,,,,23:12,misses L cross to head,
+3,71,2,4,13,15,,,,12,5,21,,,1,23:14,blocks L cross to head,misses L cross to head
+3,73,2,4,13,15,,,,12,5,22,,,1,23:16,,misses R cross to head
+3,74,1,4,13,16,,,1,12,5,23,,,1,23:17,misses R jab to head,misses L jab to head
+3,76,2,4,14,16,,1,,13,5,23,1,,,23:19,lands low L front kick to L leg,
+3,77,1,4,14,17,,,1,13,5,24,,,1,23:20,misses R jab to head,misses L hook to head
+3,78,1,4,14,18,,,1,13,5,25,,,1,23:21,misses R jab to head,"misses R cross to head, misses L hook to head"
+3,79,1,4,14,19,,,1,13,5,25,,,,23:22,misses L power shot to head,ducks other fighter
+3,81,2,4,14,19,,,,13,5,26,,,1,23:24,blocks body shot front kick,misses body shot R front kick
+3,82,1,4,14,20,,,1,13,5,27,,,1,23:25,misses R jab,misses L jab
+3,83,1,4,14,21,,,1,13,5,27,,,,23:26,misses R front kick to body,
+3,87,4,4,14,21,,,,13,5,28,,,1,23:30,,misses R cross to head
+3,88,1,4,14,22,,,1,13,5,28,,,,23:31,misses R jab to head,ducks other fighter
+3,89,1,4,14,22,,,,13,6,29,,1,1,23:32,,"misses L jab to head, lands L body shot R muay thai kick"
+3,90,1,5,14,22,1,,,13,7,29,,1,,23:33,,lands R cross to head
+3,91,1,5,14,23,,,1,13,7,30,,,1,23:34,misses L cross to head,misses R cross to head
+3,93,2,5,14,23,,,,13,7,31,,,1,23:36,ducks other fighter,misses R cross to head
+3,94,1,5,15,23,,1,,14,7,31,1,,,23:37,lands R jab to head,
+3,103,9,5,15,24,,,1,14,7,32,,,1,23:46,"misses R jab to head, blocks L head shot muay thai kick",misses L head shot R muay thai kick
+3,104,1,6,15,25,1,,1,14,8,32,,1,,23:47,misses R jab to head,lands low kick with R muay thai kick
+3,105,1,6,16,26,,1,1,15,8,32,1,,,23:48,"misses L cross to head, lands head strike- L muay thai kick",
+3,106,1,6,17,26,,1,,16,8,32,1,,,23:49,lands head shot L hammer strike to face,drops to ground unconscious
+3,107,1,6,17,26,,,,16,8,32,,,,23:50,referee stoppage,referee stoppage-not unconscious long-technical knock out
+3,111,4,6,17,26,,,,16,8,32,,,,23:54,walks briskly around ring,"tries to get up with referee on top, looks dazed"
