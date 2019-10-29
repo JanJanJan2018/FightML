@@ -1,0 +1,189 @@
+---
+title: "FightML_HitsLandedByArse"
+author: "Janis Corona"
+date: "10/28/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## This machine learning program examines the Arse May 2019 UFC fight
+
+<https://www.espn.com/mma/fightcenter/_/id/401107798/league/ufc> has access to the 3 rounds of 5 minutes fight 5/18/2019 The csv file is found at: <https://github.com/JanJanJan2018/FightML/blob/master/ArseErosaFightAudit.csv> 
+
+Predict the number of hits Arse lands based on the seconds into the round, elapsed since last action, cumulative number of hits received/landed/missed and number of hits received total for that round This data is split into a training set of 70% and a testing set of 30% based only on those instances action other than circling/standing/stepping away/toward/to the side occurs There are 224 instances of 156 training set samples of each second of action, and the remaining 68 are testing samples of each second of action
+
+
+```{r}
+ArseErosa <- read.csv('ArseErosaFightAudit.csv', 
+                       sep=',', header=TRUE, 
+                       na.strings=c('','NA'))#224X18
+ArseErosa <- ArseErosa[,1:8]
+```
+
+```{r}
+ArseErosa
+```
+
+```{r}
+head(ArseErosa)
+```
+
+```{r ,warning=FALSE,error=FALSE,message=FALSE}
+library(caret)
+library(randomForest)
+library(MASS)
+library(gbm)
+library(dplyr)
+```
+
+```{r cars}
+set.seed(189678345)
+```
+
+```{r}
+inTrain <- createDataPartition(y=ArseErosa$Hits.Lnd.A, p=0.7, list=FALSE)
+
+trainingSet <- ArseErosa[inTrain,]
+testingSet <- ArseErosa[-inTrain,]
+
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(rfMod <- train(Hits.Lnd.A~., method='rf', data=(trainingSet), 
+               trControl=trainControl(method='cv'), number=5))
+
+```
+
+```{r}
+plot(rfMod)
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(gbmMod <- train(Hits.Lnd.A~., method='gbm', data=trainingSet, verbose=FALSE ))
+
+```
+
+```{r}
+plot(gbmMod)
+```
+
+```{r}
+predRF <- round(predict(rfMod, testingSet))
+predGbm <- round(predict(gbmMod, testingSet))
+
+predDF <- data.frame(predRF, predGbm, type=testingSet$Hits.Lnd.A)
+predDF
+
+```
+
+```{r, warning=FALSE, error=FALSE,message=FALSE}
+CombinedModels <- train(type~., method='gam', data=predDF)
+CombinedPredictions <- round(predict(CombinedModels, predDF))
+CombinedPredictions
+
+```
+
+```{r}
+sum <- sum(CombinedPredictions==testingSet$Hits.Lnd.A)
+length <- length(testingSet$Hits.Lnd.A)
+accuracy_CP1 <- sum/length #97.01
+
+sum <- sum(predRF==testingSet$Hits.Lnd.A)
+length <- length(testingSet$Hits.Lnd.A)
+accuracy_rfMod <- (sum/length) #97.01
+
+sum <- sum(predGbm==testingSet$Hits.Lnd.A)
+accuracy_Gbm <- (sum/length) #97.01
+
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(knnMod <- train(Hits.Lnd.A  ~ .,
+                method='knn', preProcess=c('center','scale'),
+                tuneLength=10, trControl=trainControl(method='cv'), data=trainingSet))
+
+```
+
+```{r}
+plot(knnMod)
+```
+
+```{r, warning=FALSE}
+system.time(rpartMod <- train(Hits.Lnd.A ~ ., method='rpart', tuneLength=9, data=trainingSet))
+```
+
+```{r}
+plot(rpartMod)
+
+```
+
+```{r, warning=FALSE}
+system.time(glmMod <- train(Hits.Lnd.A ~ ., 
+                method='glm', data=trainingSet))
+```
+
+```{r}
+predKNN <- round(predict(knnMod, testingSet))
+predRPART <- round(predict(rpartMod, testingSet))
+predGLM <- round(predict(glmMod, testingSet))
+
+df3 <- cbind(predKNN, predRPART, predGLM,testingSet$Hits.Lnd.A)
+colnames(df3)[4] <- 'TrueValue'
+
+```
+
+```{r}
+length=length(testingSet$Hits.Lnd.A)
+
+sumKNN <- sum(predKNN==testingSet$Hits.Lnd.A)
+sumRPart <- sum(predRPART==testingSet$Hits.Lnd.A)
+sumGLM <- sum(predGLM==testingSet$Hits.Lnd.A)
+
+accuracy_KNN <- sumKNN/length 
+accuracy_RPART <- sumRPart/length 
+accuracy_GLM <- sumGLM/length 
+
+predDF3 <- data.frame(predRF,predGbm,df3)
+
+```
+
+```{r, warning=FALSE}
+system.time(CombinedModels <- train(TrueValue ~ ., method='gam', data=predDF3))
+```
+
+```{r}
+CombinedPredictions2 <- round(predict(CombinedModels, predDF3))
+accuracy_CP2 <- sum(CombinedPredictions2==testingSet$Hits.Lnd.A)/length 
+
+predDF4 <- data.frame(predDF3, CombinedPredictions2)
+colnames(predDF4)
+
+```
+
+```{r}
+predDF4 <- predDF4[,c(1:5,7,6)]
+colnames(predDF4)
+
+```
+
+```{r}
+results <- c(round(accuracy_rfMod,2),  
+              round(accuracy_Gbm,2), 
+             round(accuracy_KNN,2), round(accuracy_RPART,2),
+             round(accuracy_GLM,2), 
+             round(accuracy_CP2,2), round(100,2))
+
+results <- as.factor(results)
+results <- t(data.frame(results))#1X7
+colnames(results) <- colnames(predDF4)
+Results <- rbind(predDF4, results) #68X7
+Results
+#write.csv(Results,'TrueHitsLanded_ML_predictionResults.csv', row.names=FALSE)
+
+```
+
+
+
