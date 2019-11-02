@@ -1,0 +1,216 @@
+Round,SecondsIntoRound,SecondsLastRoundAction,cmTotHitsR-D,cmTotHitsL-D,cmTotHitsM-D,Hits-Recvd-D,Hits-Lnd-D,Hits-Mssd-D,cmTotHitsR-P,cmTotHitsL-P,cmTotHitsM-P,Hits-Recvd-P,Hits-Lnd-P,Hits-Mssd-P,Time,DiazFighterActionReactions,PettisFightersActionsReactions,Notes
+1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,5:00,0,0,"Diaz is mixed/orthodox/southpaw stance, Pettis is orthodox, crowd mixed on cheers for both but cheers a lot when decision to Diaz, no boos to either, Diaz is noticeably much taller, has more reach with knees, kicks, and arm reach"
+1,10,10,0,0,0,0,0,0,0,0,1,0,0,1,4:51,0,misses L mt kick low outr R leg,0
+1,16,6,0,0,1,0,0,1,0,0,1,0,0,0,4:45,misses R jab,0,0
+1,18,2,0,0,1,0,0,0,0,0,2,0,0,1,4:43,0,misses R overhead to face,0
+1,20,2,0,1,1,0,1,0,1,0,2,1,0,0,4:41,"lands R jab to facd, lands L shot to face",0,0
+1,32,12,0,2,1,0,1,0,2,0,2,1,0,0,4:29,lands R push kick to body,0,0
+1,39,7,0,2,4,0,0,3,2,0,2,0,0,0,4:22,"misses R,L, R combo to face",blocks R-L-R combo,0
+1,42,3,0,2,4,0,0,0,2,0,3,0,0,1,4:19,0,misses R jab to face,0
+1,45,3,0,2,4,0,0,0,2,0,4,0,0,1,4:16,0,misses L low leg kick to R leg,0
+1,48,3,1,2,5,1,0,1,2,1,4,0,1,0,4:13,misses R jab to face,lands R jab to face,0
+1,50,2,1,2,5,0,0,0,2,1,5,0,0,1,4:11,0,misses L mt kick to R leg,0
+1,54,4,1,2,6,0,0,1,2,1,5,0,0,0,4:07,misses R mt kick to low R leg,blocks R mt kick w R leg push,0
+1,59,5,1,2,6,0,0,0,2,1,6,0,0,1,4:02,0,misses L mt kick to R leg,0
+1,62,3,1,2,8,0,0,2,2,1,7,0,0,1,3:59,"misses R, L combo to face",misses R to face,0
+1,63,1,1,3,8,0,1,0,3,1,7,1,0,0,3:58,lands R hook to chin,0,0
+1,64,1,1,3,8,0,0,0,3,1,7,0,0,0,3:57,0,lands arm clinch,0
+1,67,3,1,4,8,0,1,0,4,1,7,1,0,0,3:54,lands R knee to R inside leg in clinch,0,0
+1,70,3,1,6,8,0,2,0,6,1,7,2,0,0,3:51,"lands L , L hook to R head in clinch",0,0
+1,73,3,1,8,8,0,2,0,8,1,7,2,0,0,3:48,"lands L upper to body, lands L to head in clinch",0,0
+1,76,3,1,10,8,0,2,0,10,1,7,2,0,0,3:45,"Lands L, L hooks to arm, body",0,0
+1,84,1,1,12,8,0,2,0,12,1,7,2,0,0,3:37,"lands R, R hammer to L body low ribs in clinch",0,0
+1,90,6,1,14,8,0,2,0,14,1,7,2,0,0,3:31,"lands R knee to L head, lands R hook to L body",stops clinch hold of arms,0
+1,93,3,1,14,8,0,0,0,14,1,9,0,0,2,3:28,0,"misses L cross, R upper to face",0
+1,107,14,1,14,8,0,0,0,14,1,10,0,0,1,3:14,misses R push kick to body,0,0
+1,117,10,1,14,8,0,0,0,14,1,12,0,0,2,3:04,0,"misses R cross, misses R mt kick to body",0
+1,120,3,1,14,9,0,0,1,14,1,12,0,0,0,3:01,misses R push kick to body,0,0
+1,144,24,1,15,10,0,1,1,15,1,12,1,0,0,2:37,"misses R to face, clinches neck, lands R knee to body",0,0
+1,147,3,1,15,11,0,0,1,15,1,12,0,0,0,2:34,misses R hook to L head in clinch,0,0
+1,150,3,1,17,11,0,2,0,17,1,12,2,0,0,2:31,"lands R knee to inside R leg, lands L knee to outside R leg in clinch",holding arm clinch,0
+1,152,2,1,18,11,0,1,0,18,1,12,1,0,0,2:29,lands R knee to inside R leg,holding clinch since last started,0
+1,153,1,1,20,11,0,2,0,20,1,12,2,0,0,2:28,"lands L, L hooks to R head in clinch",0,0
+1,155,2,1,21,11,0,1,0,21,1,12,1,0,0,2:26,lands L hammer to R thigh,0,0
+1,156,1,1,22,11,0,1,0,22,1,12,1,0,0,2:25,lands L hammer to R thigh,holding clinch since last started,0
+1,160,4,1,23,11,0,1,0,23,1,12,1,0,0,2:21,lands R knee to inside R leg,holding clinch since last started,0
+1,162,2,1,24,11,0,1,0,24,1,12,1,0,0,2:19,lands L knee to body,breaks clinch,0
+1,165,3,1,25,11,0,1,0,25,1,13,1,0,1,2:16,lands L hook to body,misses R overhead,0
+1,166,1,1,25,12,0,0,1,25,1,13,0,0,0,2:15,misses R to face ,0,0
+1,170,4,2,25,12,1,0,0,25,2,13,0,1,0,2:11,0,lands R knee to L leg,0
+1,179,9,2,25,13,0,0,1,25,2,13,0,0,0,2:02,misses L jab,0,0
+1,183,4,2,25,13,0,0,0,25,2,14,0,0,1,1:58,0,misses L hook to head,0
+1,187,4,3,25,13,1,0,0,25,3,14,0,1,0,1:54,0,lands R cross to face,0
+1,194,7,3,25,15,0,0,2,25,3,14,0,0,0,1:47,"misses R, L combo to face",0,0
+1,200,6,3,25,16,0,0,1,25,3,14,0,0,0,1:41,misses L jab,0,0
+1,201,1,3,25,17,0,0,1,25,3,14,0,0,0,1:40,misses R push kick to body,0,0
+1,204,3,4,25,17,1,0,0,25,4,15,0,1,1,1:37,receives guillotine hold,"misses R hook to head, gets guillotine",0
+1,225,2,5,27,17,0,1,0,26,5,17,1,0,0,1:16,lands R hammer to face on top,0,0
+1,230,5,5,28,17,0,1,0,27,5,17,1,0,0,1:11,lands R hammer to face on top,on ground getting hit,0
+1,236,2,6,29,17,1,1,0,28,6,17,1,1,0,1:05,lands L hooks to R arm in ground clinch,lands R short hammers to L head clinching on ground,0
+1,237,1,7,29,17,1,0,0,28,7,17,0,1,0,1:04,0,lands R short hammers to L head clinching on ground,0
+1,238,1,7,30,17,0,1,0,29,7,17,1,0,0,1:03,lands L hooks to R arm in ground clinch,0,0
+1,239,1,7,31,17,0,1,0,30,7,17,1,0,0,1:02,lands L hooks to R arm in ground clinch,0,0
+1,242,3,7,32,17,0,1,0,31,7,17,1,0,0,0:59,breaks ground arm clinch,lands L hook to R head on ground,0
+1,245,3,7,34,17,0,2,0,33,7,17,2,0,0,0:56,"lands R, L to face in half guard on top",0,0
+1,246,1,7,35,17,0,1,0,34,7,17,1,0,0,0:55,lands R to face on ground,losing ground clinch,0
+1,250,4,7,38,17,0,3,0,37,7,17,3,0,0,0:51,"lands L,L,L elbows to face on top",on ground trying BJJ,0
+1,254,1,7,39,17,0,1,0,38,7,17,1,0,0,0:47,lands L overhead ground to L head on top of back,0,0
+1,257,3,7,40,17,0,1,0,39,7,17,1,0,0,0:44,lands L to L head on top of back on ground,0,0
+1,260,3,7,41,17,0,1,0,40,7,17,1,0,0,0:41,"locks full guard of back, Rear Naked Choke on back ground",0,0
+1,262,2,7,41,17,0,0,0,40,7,17,0,0,0,0:39,0,"breaks out of RNC, on back",0
+1,273,13,7,42,17,0,1,0,41,7,17,1,0,0,0:28,"lands L hook to L head in side guard, has back",giving back tucked legs,0
+1,275,2,7,44,17,0,2,0,43,7,17,2,0,0,0:26,"lands L hook 2X to L head in side guard, has back",0,0
+1,277,2,7,44,19,0,0,2,43,7,17,0,0,0,0:24,misses L hook 2X to L head in side guard holding back,0,0
+1,285,8,7,44,21,0,0,1,43,7,17,0,0,0,0:16,misses R hook to R head on ground legs locked on body,0,0
+1,292,7,7,44,22,0,0,1,43,7,17,0,0,0,0:09,misses R hook/overhead to face on ground dominating,0,0
+1,298,6,7,44,23,0,0,1,43,7,17,0,0,0,0:03,misses R to face dominating ground holding back,0,0
+1,300,2,7,45,23,0,1,0,44,7,17,1,0,0,0:01,lands R hit to body dominating back on ground,0,0
+2,6,6,1,0,0,1,0,0,0,1,0,0,1,0,4:55,0,lands R mt kick to L lead leg,0
+2,8,2,1,2,0,0,2,0,2,1,0,2,0,0,4:53,"lands L,R, to face",gets up to get hit 2X in face,0
+2,10,2,1,3,0,0,1,0,3,1,0,1,0,0,4:51,lands standing body/arm clinch against cage,0,0
+2,14,4,1,4,0,0,1,0,4,1,0,1,0,0,4:47,lands R knee to inside R leg ,"arms held against cage in arm grab, breaks body/arm clinch",0
+2,15,1,1,5,0,0,1,0,5,1,0,1,0,0,4:46,lands R knee to outer L leg ,R arm and body clinch being held against cage,0
+2,17,2,1,6,0,0,1,0,6,1,0,1,0,0,4:44,lands R knee to inside R leg,R arm and body clinch being held against cage,0
+2,19,2,1,6,1,0,0,1,6,1,0,0,0,0,4:42,misses high L knee to face,breaks out of clinch against cage,0
+2,20,1,2,6,2,1,0,1,6,2,0,0,1,0,4:41,misses R overhead to face,lands L jab to body,0
+2,26,6,2,6,4,0,0,2,6,2,0,0,0,0,4:35,"misses L jab to face, misses R hook to face",0,0
+2,29,3,2,6,6,0,0,2,6,2,0,0,0,0,4:32,"misses L jab to face, misses R overhead cross to face",misse L jab,0
+2,33,4,2,6,6,0,0,0,6,2,1,0,0,1,4:28,0,misses L jab to body,0
+2,35,2,2,6,7,0,0,1,6,2,1,0,0,0,4:26,misses L jab to face,0,0
+2,38,3,2,6,7,0,0,0,6,2,2,0,0,1,4:23,0,misses L hook to face,0
+2,44,6,2,6,7,0,0,0,6,2,3,0,0,1,4:17,blocks L jab to face,misses L jab to face,0
+2,48,4,2,6,7,0,0,0,6,2,4,0,0,1,4:13,0,misses R cross to face,0
+2,53,5,3,6,8,1,0,1,6,3,4,0,1,0,4:08,misses R overhead to face,lands R mt kick to R outer leg,0
+2,56,3,4,6,10,1,0,2,6,4,4,0,1,0,4:05,"misses L kick to low legs, misses L to face",lands R to L face,0
+2,59,3,4,6,11,0,0,1,6,4,6,0,0,2,4:02,misses R jab to face,"misses R push kick to body, misses L jab to face",0
+2,61,2,4,6,13,0,0,2,6,4,6,0,0,0,4:00,"misses R, L combo to face",0,0
+2,68,7,4,6,14,0,0,1,6,4,6,0,0,0,3:53,misses L mt kick to R body,blocks mt kick with R arm,0
+2,72,4,4,6,15,0,0,1,6,4,6,0,0,0,3:49,misses cage clinch of R to head,avoids cage clinch,0
+2,77,5,4,6,16,0,0,1,6,4,7,0,0,1,3:44,misses L puch kick,misses L jab to face,0
+2,78,1,5,6,16,1,0,0,6,5,7,0,1,0,3:43,guards face,lands R upper to body,0
+2,81,3,5,6,16,0,0,0,6,5,9,0,0,2,3:40,guards face,"misses R, L to face",0
+2,83,2,5,8,16,0,2,0,8,5,9,2,0,0,3:38,"lands R,R to face",0,0
+2,84,1,5,8,17,0,0,1,8,5,9,0,0,0,3:37,misses overhead R to face,0,0
+2,88,4,5,8,17,0,0,0,8,5,10,0,0,1,3:33,"guards face, lifts L knee, looks exhausted against cage",misses L cross to face,0
+2,93,5,5,8,17,0,0,0,8,5,11,0,0,1,3:28,"guards face, lifts L knee, off of cage",misses L jab to face,0
+2,101,8,5,8,18,0,0,1,8,5,12,0,0,1,3:20,misses R jab,misses R cross to face,0
+2,107,6,5,8,18,0,0,0,8,5,13,0,0,1,3:14,0,misses R to face,0
+2,108,1,5,8,19,0,0,1,8,5,13,0,0,0,3:13,misses R push kick to body,0,0
+2,109,1,5,8,19,0,0,0,8,5,14,0,0,1,3:12,0,misses L mt kick to face,0
+2,113,4,6,8,19,1,0,0,8,6,15,0,1,1,3:08,0,"lands L jab to face, misses R cross to face",0
+2,115,2,6,8,19,0,0,0,8,6,16,0,0,1,3:06,goes for clinch,"misses R cross, gets clinched",0
+2,117,2,6,8,19,0,0,0,8,6,16,0,0,0,3:04,misses clinch,0,0
+2,123,6,7,8,19,1,0,0,8,7,16,0,1,0,2:58,lands clinch of arms/body,0,0
+2,128,5,7,10,19,0,2,0,10,7,16,2,0,0,2:53,"lands R knee to inside R leg, lands L knee to outside R leg in clinch",0,0
+2,129,1,7,10,20,0,0,1,10,7,16,0,0,0,2:52,misses R hook,pushes clinch apart,0
+2,131,2,7,10,20,0,0,0,10,7,17,0,0,1,2:50,0,misses R push kick,0
+2,133,2,7,11,21,0,1,1,11,7,17,1,0,0,2:48,"misses L to face, lands R jab to face",0,0
+2,135,2,7,12,21,0,1,0,11,7,17,0,0,0,2:46,lands L knee to body in sloppy cage clinch,0,0
+2,136,1,7,13,21,0,1,0,11,7,17,0,0,0,2:45,lands R hook to L head,breaks away from cage,0
+2,139,3,8,13,21,1,0,0,11,8,17,0,1,0,2:42,0,"lands R upper to body, clinches R arm",0
+2,141,2,9,14,21,1,1,0,12,9,17,1,1,0,2:40,"lands L to R head, guards face","lands R to face, stops clinch",0
+2,145,4,9,14,22,0,0,1,12,9,17,0,0,0,2:36,misses L to head,0,0
+2,146,1,10,14,22,1,0,0,12,10,17,0,1,0,2:35,0,lands R to head,0
+2,147,1,10,14,22,0,0,0,12,10,18,0,0,1,2:34,0,misses L jab to head,0
+2,151,4,10,15,23,0,1,1,13,10,18,1,0,0,2:30,"misses R push kick to body, lands slap hit to L face",0,0
+2,153,2,10,15,23,0,0,0,13,10,18,0,0,0,2:28,"misses L mt kick to R body, lands L to face",0,0
+2,155,2,10,15,23,0,0,0,13,10,19,0,0,1,2:26,grabs back as a clinch,misses R to face,0
+2,161,6,10,16,23,0,1,0,14,10,19,1,0,0,2:20,"having back clinch, lands R knee to face",drops to ground by cage,0
+2,169,8,10,16,24,0,0,1,14,10,19,0,0,0,2:12,"misses L hook to head, tries to get on top full guard",0,0
+2,173,4,10,16,25,0,0,1,14,10,19,0,0,0,2:08,misses R to head on ground,tries ground bjj ,0
+2,179,6,10,16,25,0,0,0,14,10,20,0,0,1,2:02,guards face dominating ground,misses R hammer to head from ground,0
+2,180,1,10,17,25,0,1,0,15,10,20,1,0,0,2:01,lands R body shot on top,"getting up from ground, push kicking with L leg",0
+2,184,4,10,19,25,0,2,0,17,10,20,2,0,0,1:57,"lands guillotine clinch with both standing, lands R knee to head",0,0
+2,189,5,10,20,25,0,1,0,18,10,20,1,0,0,1:52,lands body/arm clinch against cage,0,0
+2,196,7,10,21,25,0,1,0,19,10,20,1,0,0,1:45,lands L knee to R outer leg pushing against cage clinch,0,0
+2,197,1,10,22,25,0,1,0,20,10,20,1,0,0,1:44,lands R hook to head pushing against cage,0,0
+2,201,4,10,23,25,0,1,0,21,10,20,1,0,0,1:40,lands R hammer to L arm,holds L arm against cage,0
+2,212,11,10,24,25,0,1,0,22,10,20,1,0,0,1:29,lands L knee to body pushing against cage holding R hand/arm,0,0
+2,214,2,10,24,25,0,0,0,22,10,20,0,0,0,1:27,lands R knee to inside R leg clinching against cage,0,0
+2,216,2,11,25,25,1,1,0,23,11,20,1,1,0,1:25,"lands hard R hook to head, loses clinch","lands R cross to head, breaks up clinch moves away from cage",0
+2,217,1,11,25,27,0,0,2,23,11,20,0,0,0,1:24,"misses L to face, misses R to face",0,0
+2,219,2,12,25,27,1,0,0,23,12,20,0,1,0,1:22,0,"lands R to face,  ",0
+2,220,1,15,25,27,3,0,0,23,15,20,0,3,0,1:21,0,"lands L, lands R to face, lands L hook to face",0
+2,222,2,15,25,28,0,0,1,23,15,21,0,0,1,1:19,"misses L to face, pushing against cage, misses clinch","misses R knee to body, avoids clinch by cage",0
+2,223,1,15,27,28,0,2,0,25,15,21,2,0,0,1:18,"lands L to body, lands R upper to face",0,0
+2,228,5,15,27,29,0,0,1,25,15,21,0,0,0,1:13,misses L jab to face,0,0
+2,229,1,15,27,31,0,0,2,25,15,21,0,0,0,1:12,"misses R, L hook combo to face",0,0
+2,230,1,16,28,32,1,1,1,26,15,22,1,0,1,1:11,"lands R hook to chin, misses R hook to face","misses L cross to face, lands R to body",0
+2,233,3,16,28,33,0,0,1,26,15,22,0,0,0,1:08,"misses R knee to face, clinches neck pushing against cage",0,0
+2,234,1,16,29,33,0,1,0,27,15,22,1,0,0,1:07,lands R knee to face,0,0
+2,243,9,16,29,34,0,0,1,27,15,22,0,0,0,0:58,misses R knee to body,blocks R knee to body w R knee,0
+2,248,5,17,29,34,1,0,0,27,16,23,0,1,1,0:53,guards face,"misses R to face, lands L to face",0
+2,253,1,17,30,35,0,1,1,28,16,23,1,0,0,0:48,"lands R knee to face pushing against cage, misses R knee to face",0,0
+2,257,4,18,30,35,1,0,0,28,17,23,0,1,0,0:44,0,lands R upper to face,0
+2,258,1,18,31,35,0,1,0,29,17,23,1,0,0,0:43,lands L upper to face,0,0
+2,262,4,18,32,35,0,1,0,30,17,23,1,0,0,0:39,lands R body shot to L body,0,0
+2,264,2,18,33,35,0,1,0,31,17,23,1,0,0,0:37,lands L upper to face,0,0
+2,268,4,18,33,35,0,0,0,31,17,24,0,0,1,0:33,0,misses R hammer to R head,0
+2,277,9,18,34,35,0,1,0,32,17,24,1,0,0,0:24,lands R knee to body pushing against cage,0,0
+2,278,1,18,35,35,0,1,0,33,17,24,1,0,0,0:23,lands R to face pushing against cage,0,0
+2,281,3,19,35,35,1,0,0,33,18,24,0,1,0,0:20,0,lands R elbow to L face pushed against cage,0
+2,282,1,19,36,36,0,1,1,34,18,24,1,0,0,0:19,"lands R hook to body, misses L elbow to face",0,0
+2,283,1,19,36,37,0,0,1,34,18,24,0,0,0,0:18,misses R hook to head,not being pushed against cage,0
+2,284,1,19,37,37,0,1,0,35,18,24,1,0,0,0:17,lands L to face,0,0
+2,288,4,21,37,37,2,0,0,35,20,24,0,2,0,0:13,"lands L upper to face, lands L upper to face",0,0
+2,289,1,21,37,38,0,0,1,35,20,25,0,0,1,0:12,misses L hook to face,misses R cross to face,0
+2,290,1,23,38,38,2,1,0,36,22,25,1,2,0,0:11,lands R to face,"lands L, R to face",0
+2,291,1,23,39,38,0,1,0,37,22,26,1,0,1,0:10,lands L upper to face ,misses R to face,0
+2,292,1,23,39,40,0,0,2,37,22,27,0,0,1,0:09,"misses R, L to face",misses R to face,0
+2,294,2,23,41,40,0,2,0,39,22,27,2,0,0,0:07,"lands R, R to body",0,0
+2,296,2,23,43,40,0,2,0,41,22,27,2,0,0,0:05,"lands R,R to face against cage",0,0
+2,297,1,23,45,40,0,2,0,43,22,27,2,0,0,0:04,"lands R, L to face  ",0,0
+2,299,2,23,47,40,0,2,0,45,22,27,2,0,0,0:02,"lands R hook to face, lands R upper to face",0,0
+3,2,2,0,0,0,0,0,0,0,0,1,0,0,1,4:58,misses R push kick,0,0
+3,5,3,0,0,0,0,0,0,0,0,1,0,0,0,4:55,"misses R, grabs body with R",0,0
+3,7,2,1,0,0,1,0,0,0,1,1,0,1,0,4:53,pushes against cage,lands R upper to face,0
+3,8,1,1,2,0,0,2,0,2,1,1,2,0,0,4:52,"lands L, R body shots",0,0
+3,10,2,1,2,0,0,0,0,2,1,2,0,0,1,4:50,guards face,misses L against cage,0
+3,12,2,1,2,0,0,0,0,2,1,3,0,0,1,4:48,0,misses R hook to face,0
+3,14,2,1,3,0,0,1,0,3,1,4,1,0,1,4:46,lands R hammer to head,"misses L hook, breaks away from cage",0
+3,15,1,1,3,0,0,0,0,3,1,4,0,0,0,4:45,0,misses R to face,0
+3,16,2,1,4,1,0,1,1,4,1,4,1,0,0,4:44,"misses R upper to face, lands R jab to face",0,0
+3,18,2,1,4,1,0,0,0,4,1,5,0,0,1,4:42,0,misses R hook to face,0
+3,20,2,1,4,1,0,0,0,4,1,6,0,0,1,4:40,0,misses R to face,0
+3,22,2,1,4,1,0,0,0,4,1,8,0,0,2,4:38, blocks L mt kick to head w R arm,"misses R jab to face, misses L mt kick to head",0
+3,25,3,2,4,1,1,0,0,4,2,8,0,1,0,4:35,0,lands R push kick to L leg,0
+3,27,2,3,4,2,1,0,1,4,3,8,0,1,0,4:33,misses R overhead to face,lands R knee to head as a block,0
+3,29,2,3,4,4,0,0,2,4,3,8,0,0,0,4:31,"misses R, L to face",0,0
+3,32,3,3,4,4,0,0,0,4,3,9,0,0,1,4:28,0,misses R cross to face,0
+3,33,1,3,4,5,0,0,1,4,3,9,0,0,0,4:27,misses neck grab,0,0
+3,38,5,3,4,6,0,0,1,4,3,9,0,0,0,4:22,misses L jab to face,0,0
+3,39,1,3,4,6,0,0,0,4,3,11,0,0,2,4:21,0,"misses L, R to face",0
+3,41,2,3,4,6,0,0,0,4,3,12,0,0,1,4:19,0,misses L to R head,0
+3,47,2,3,4,7,0,0,1,4,3,12,0,0,0,4:13,misses R push kick to body,0,0
+3,51,4,4,4,8,1,0,1,4,4,12,0,1,0,4:09,misses L to face,lands R to face,0
+3,53,2,4,5,8,0,1,0,5,4,13,1,0,1,4:07,lands R jab to body,misses L hook to body,0
+3,57,4,4,5,9,0,0,1,5,4,14,0,0,1,4:03,misses R push kick,misses R jab to face,0
+3,72,15,4,5,10,0,0,1,5,4,15,0,0,1,3:48,misses L jab to face,misses R jab to face,0
+3,78,6,4,5,11,0,0,1,5,4,16,0,0,1,3:42,misses R cross to face,misses R jab,0
+3,84,6,4,5,12,0,0,1,5,4,16,0,0,0,3:36,"misses R push kick to body, pushes against cage",0,0
+3,85,1,4,5,13,0,0,1,5,4,17,0,0,1,3:35,misses L jab to face,misses R to face,0
+3,88,3,4,5,14,0,0,1,5,4,18,0,0,1,3:32,misses L to face,misses R to face,0
+3,91,3,4,5,15,0,0,1,5,4,18,0,0,0,3:29,misses R knee to head,0,0
+3,92,1,4,6,15,0,1,0,6,4,18,1,0,0,3:28,lands R knee to face,0,0
+3,94,2,4,7,15,0,1,0,7,4,18,1,0,0,3:26,lands R knee to face,0,0
+3,98,4,4,8,15,0,1,0,7,4,18,0,0,0,3:22,lands R to body,on ground giving back,0
+3,100,2,4,10,15,0,2,0,9,4,18,2,0,0,3:20,"lands L, R to face",on ground sitting against cage guarding face,0
+3,102,2,4,10,16,0,0,1,9,4,18,0,0,0,3:18,misses R downward hit to face,"on ground triess Bjj triangle, arm submit",0
+3,115,13,4,12,16,0,2,0,11,4,18,2,0,0,3:05,"lands R,R to head","on ground guarding, giving back legs tucked",0
+3,121,6,4,13,16,0,1,0,12,4,18,1,0,0,2:59,lands hammers L to face trying to take his back,blocks face from ground giving back,0
+3,131,10,4,14,16,0,1,0,13,4,18,1,0,0,2:49,lands L hit to body on ground,0,0
+3,149,18,4,15,16,0,1,0,14,4,18,1,0,0,2:31,lands L hammer to R head on ground in guard on back,0,0
+3,157,8,5,16,16,1,1,0,15,5,18,1,1,0,2:23,lands R hammers to R head on back in guard on ground,lands elbow in abdomen,0
+3,164,7,6,16,16,1,0,0,15,6,18,0,1,0,2:16,0,lands R elbow to face on top in guard on ground,0
+3,166,2,6,17,16,0,1,0,16,6,18,1,0,0,2:14,lands L hook to head on back on ground,0,0
+3,178,12,6,17,16,0,0,0,16,6,19,0,0,1,2:02,0,misses R elbow to face on top in guard on ground,0
+3,193,15,6,18,16,0,1,0,17,6,19,1,0,0,1:47,lands R hammer to L head on back with guard,0,0
+3,200,7,6,19,16,0,1,0,18,6,19,1,0,0,1:40,lands R hook to L body on ground,0,0
+3,208,8,7,19,16,1,0,0,18,7,19,0,1,0,1:32,0,"lands R elbow to face, breaks out of his guard on top",0
+3,220,12,7,21,16,0,2,0,20,7,19,2,0,0,1:20,"lands R hook, lands R elbow to head from ground on side back",0,0
+3,223,3,7,21,17,0,0,1,20,7,19,0,0,0,1:17,misses R hit to head on ground,0,0
+3,224,1,7,22,17,0,1,0,21,7,19,1,0,0,1:16,lands R elbow backwards on ground,0,0
+3,251,27,7,23,17,0,1,0,22,7,19,1,0,0,0:49,lands R hook to face on top ground game,0,0
+3,258,7,7,25,17,0,2,0,24,7,19,2,0,0,0:42,"Lands L,L to head ground game on top",giving back tucked legs,0
+3,259,1,7,26,17,0,1,0,25,7,19,1,0,0,0:41,lands L to head,0,0
+3,273,14,7,27,17,0,1,0,26,7,19,1,0,0,0:27,lands R to chin hammer on ground has guard on side,0,0
