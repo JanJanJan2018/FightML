@@ -1,0 +1,236 @@
+---
+title: "Simulated VulfenSarah hits landed with first 50 Wolfey as a Testing Set"
+author: "Janis Corona"
+date: "11/17/2019"
+output:
+  html_document: default
+  word_document: default
+---
+
+## put in the first 50 samples of Wolfey as the testing set to see the
+prediction accuracy of hits landed with VulfenSarah hits landed comparison
+
+
+```{r}
+Vulfen <- read.csv('SarahWolfEaten_addedFeatures.csv', 
+                       sep=',', header=TRUE, 
+                       na.strings=c('','NA'))
+```
+
+```{r}
+Wolfey <- read.csv('wolfey_addedFeatures.csv', 
+                       sep=',', header=TRUE, nrows=50,
+                       na.strings=c('','NA'))
+
+```
+
+```{r}
+Wolfey <- Wolfey[,c(1:7,8:15,48:155)]#omit all X1 landed and x2 received
+Vulfen <- Vulfen[,c(1:7,8:15,48:155)]#omit all X1 landed and x2 received
+```
+
+```{r ,warning=FALSE,error=FALSE,message=FALSE}
+library(caret)
+library(randomForest)
+library(MASS)
+library(gbm)
+library(dplyr)
+```
+
+```{r cars}
+set.seed(189678345)
+```
+
+```{r}
+
+trainingSet <- Vulfen
+testingSet <- Wolfey
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(rfMod <- train(TotLandsX1~., method='rf', data=(trainingSet), 
+                           trControl=trainControl(method='cv'), number=5))
+
+```
+
+```{r}
+plot(rfMod)
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(gbmMod <- train(TotLandsX1~., method='gbm', data=trainingSet, verbose=FALSE ))
+
+```
+
+```{r}
+plot(gbmMod)
+```
+
+```{r}
+predRF <- round(predict(rfMod, testingSet))
+predGbm <- round(predict(gbmMod, testingSet))
+
+predDF <- data.frame(predRF, predGbm, type=testingSet$TotLandsX1)
+predDF
+
+```
+
+
+```{r}
+
+sum <- sum(predRF==testingSet$TotLandsX1)
+length <- length(testingSet$TotLandsX1)
+accuracy_rfMod <- (sum/length) 
+
+sum <- sum(predGbm==testingSet$TotLandsX1)
+accuracy_Gbm <- (sum/length) 
+
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(knnMod <- train(TotLandsX1 ~ .,
+                            method='knn', preProcess=c('center','scale'),
+                            tuneLength=10, trControl=trainControl(method='cv'), data=trainingSet))
+
+```
+
+```{r}
+plot(knnMod)
+```
+
+```{r, warning=FALSE}
+system.time(rpartMod <- train(TotLandsX1~ ., method='rpart', tuneLength=9, data=trainingSet))
+```
+
+```{r}
+plot(rpartMod)
+
+```
+
+```{r, warning=FALSE}
+system.time(glmMod <- train(TotLandsX1~ ., 
+                            method='glm', data=trainingSet))
+```
+
+```{r, error=FALSE, warning=FALSE, message=FALSE}
+predKNN <- round(predict(knnMod, testingSet))
+predRPART <- round(predict(rpartMod, testingSet))
+predGLM <- round(predict(glmMod, testingSet))
+
+df3 <- cbind(predKNN, predRPART, predGLM,testingSet$TotLandsX1)
+colnames(df3)[4] <- 'TrueValue'
+
+```
+
+```{r}
+length=length(testingSet$TotLandsX1)
+
+sumKNN <- sum(predKNN==testingSet$TotLandsX1)
+sumRPart <- sum(predRPART==testingSet$TotLandsX1)
+sumGLM <- sum(predGLM==testingSet$TotLandsX1)
+
+accuracy_KNN <- sumKNN/length 
+accuracy_RPART <- sumRPart/length 
+accuracy_GLM <- sumGLM/length 
+
+predDF3 <- data.frame(predRF,predGbm,df3)
+
+```
+
+
+```{r}
+
+colnames(predDF3)
+
+```
+
+```{r}
+results <- c(round(accuracy_rfMod,2),  
+             round(accuracy_Gbm,2), 
+             round(accuracy_KNN,2), round(accuracy_RPART,2),
+             round(accuracy_GLM,2), 
+             round(100,2))
+
+results <- as.factor(results)
+results <- t(data.frame(results))
+colnames(results) <- colnames(predDF3)
+Results <- rbind(predDF3, results) 
+Results
+
+```
+
+```{r}
+bestResults <- Results[,c(2,6)]
+
+# hits predicted for VulfenSarah to land as a simulation of the hits landed by Wolfey's first 50 instances
+
+sum(bestResults[1]>0)# predicted VulfenSarah will land 1 hit
+sum(bestResults[2]>0)# compared to the true value of 12 hits Mazvidal landed
+
+```
+```{r}
+library(dplyr)
+#BestPredictedHit <- filter(Results,TrueValue == 1 | TrueValue == 2)
+BestPredictedHit <- subset(Results, Results$TrueValue == 1 | Results$TrueValue ==2)
+length=length(BestPredictedHit$TrueValue)
+
+sumRF <- sum(BestPredictedHit$predRF==BestPredictedHit$TrueValue)
+sumGbm <- sum(BestPredictedHit$predGbm==BestPredictedHit$TrueValue)
+sumKNN <- sum(BestPredictedHit$predKNN==BestPredictedHit$TrueValue)
+sumRPart <- sum(BestPredictedHit$predRPART==BestPredictedHit$TrueValue)
+sumGLM <- sum(BestPredictedHit$predGLM==BestPredictedHit$TrueValue)
+
+accuracy_RF <- round(sumRF/length,2)
+accuracy_Gbm <- round(sumGbm/length,2) 
+accuracy_KNN <- round(sumKNN/length,2) 
+accuracy_RPART <- round(sumRPart/length,2) 
+accuracy_GLM <- round(sumGLM/length,2) 
+Truth <- round(sum(BestPredictedHit$TrueValue==BestPredictedHit$TrueValue)/length,2)
+
+HitAccuracy <- c(accuracy_RF,accuracy_Gbm,accuracy_KNN,accuracy_RPART,
+                 accuracy_GLM,Truth)
+HitAccuracy <- t(data.frame(as.factor(HitAccuracy)))
+colnames(HitAccuracy) <- colnames(BestPredictedHit)
+BestPredictedHit1 <- rbind(BestPredictedHit,HitAccuracy)
+row.names(BestPredictedHit1)[8] <- 'Accuracy'
+BestPredictedHit1
+```
+# KNN and GLM were more accurate in guessing which simulations would produce a hit landed by VulfenSarah out of only 7 hits landed in the testing set, and the accuracy includes the percent correct for hits landed equal to zero for true hits landed equal to zero.
+```{r}
+testHits <- testingSet[row.names(BestPredictedHit1)[1:7],]
+Hits <-cbind(BestPredictedHit1[1:7,],testHits)
+Hits
+```
+## The above table shows the 7 simulations of another fighter in our trained model and the results of those hits that were landed in this testing set against the prediction of a hit landed with those algorithms for machine learning: random forest (rf), global boosted machines (gbm), k nearest neighbors (KNN), recursive partitioning and regression trees (rpart), generalized linear models (glm), and the true testing set value aiming to predict for hits landed. 
+
+
+
+***
+
+Aside, put aside the above, some time later as in months. What about looking at those instances where Vulfen lands 2 hits in one second and plotting this against the number of hits and seconds that passed? Lets do that.
+
+***
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+library(tidyr)
+```
+
+
+
+```{r}
+#x1_2 <- grep('X1$', colnames(Vulfen))
+#hits2 <- Vulfen[,c(2,4,x1_2)]
+
+X1_2plus <- subset(Vulfen, Vulfen$TotLandsX1 > 1)
+
+x1_2plus_tidy <- gather(X1_2plus, 'actionReaction', 'actionCounts', 16:123)
+x1_2plus_counts <- subset(x1_2plus_tidy, x1_2plus_tidy$actionCounts > 0)
+x1_2plus_counts
+```
+
+***
+The above demonstrates there is an error in the original sum or calculations of the binary action variables in developing the total hits. This will be fixed in that script that grabbed the commented actions and counted the hits landed. There should be more observations above than there are listed if there are 4 observations > 2, there should be at least 8 observations in the tidy version table to plot.This file is the SarahWolfEaten.R file that adds up the counts of actions in the dummy variable actions to export.
+
+***
+
+

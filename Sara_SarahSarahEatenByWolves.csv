@@ -1,0 +1,545 @@
+Round,SecondsIntoRound,SecondsLastRoundAction,cmTotHitsR-X1,cmTotHitsL-X1,cmTotHitsM-X1,Hits-Recvd-X1,Hits-Lnd-X1,Hits-Mssd-X1,cmTotHitsR-X2,cmTotHitsL-X2,cmTotHitsM-X2,Hits-Recvd-X2,Hits-Lnd-X2,Hits-Mssd-X2,Time,FighterActionReactions.X1,FightersActionsReactions.X2,Notes
+1,,,,,,,,,,,,,,,5:00,,,Tate
+1,,,,,,,,,,,,,,,4:59,,,Tate
+1,,,,,,,,,,,,,,,4:58,,,Tate
+1,,,,,,,,,,,,,,,4:57,,,Tate
+1,,,,,,,,,,,,,,,4:56,,,Tate
+1,,,,,,,,,,,,,,,4:55,,,Tate
+1,,,,,,,,,,,,,,,4:54,,,Tate
+1,,,,,,,,,,,,,,,4:53,,,Tate
+1,,,,,,,,,,,,,,,4:52,,,Tate
+1,,,,,,,,,,,,,,,4:51,,,Tate
+1,,,,,,,,,,,,,,,4:50,,misses R push kick,Tate
+1,,,,,,,,,,,,,,,4:49,,,Tate
+1,,,,,,,,,,,,,,,4:48,,,Tate
+1,,,,,,,,,,,,,,,4:47,,,Tate
+1,,,,,,,,,,,,,,,4:46,,misses R cross to face,Tate
+1,,,,,,,,,,,,,,,4:45,,,Tate
+1,,,,,,,,,,,,,,,4:44,,,Tate
+1,,,,,,,,,,,,,,,4:43,misses L jab,,Tate
+1,,,,,,,,,,,,,,,4:42,,,Tate
+1,,,,,,,,,,,,,,,4:41,misses R mt kick to low L lead leg,,Tate
+1,,,,,,,,,,,,,,,4:40,,,Tate
+1,,,,,,,,,,,,,,,4:39,,,Tate
+1,,,,,,,,,,,,,,,4:38,,,Tate
+1,,,,,,,,,,,,,,,4:37,,,Tate
+1,,,,,,,,,,,,,,,4:36,,,Tate
+1,,,,,,,,,,,,,,,4:35,,,Tate
+1,,,,,,,,,,,,,,,4:34,,,Tate
+1,,,,,,,,,,,,,,,4:33,,,Tate
+1,,,,,,,,,,,,,,,4:32,,,Tate
+1,,,,,,,,,,,,,,,4:31,,,Tate
+1,,,,,,,,,,,,,,,4:30,,,Tate
+1,,,,,,,,,,,,,,,4:29,,,Tate
+1,,,,,,,,,,,,,,,4:28,,,Tate
+1,,,,,,,,,,,,,,,4:27,,,Tate
+1,,,,,,,,,,,,,,,4:26,,,Tate
+1,,,,,,,,,,,,,,,4:25,,,Tate
+1,,,,,,,,,,,,,,,4:24,,,Tate
+1,,,,,,,,,,,,,,,4:23,,,Tate
+1,,,,,,,,,,,,,,,4:22,,misses L jab,Tate
+1,,,,,,,,,,,,,,,4:21,misses R mt kick to low L lead leg,,Tate
+1,,,,,,,,,,,,,,,4:20,,,Tate
+1,,,,,,,,,,,,,,,4:19,,,Tate
+1,,,,,,,,,,,,,,,4:18,,misses L jab,Tate
+1,,,,,,,,,,,,,,,4:17,,,Tate
+1,,,,,,,,,,,,,,,4:16,,,Tate
+1,,,,,,,,,,,,,,,4:15,,,Tate
+1,,,,,,,,,,,,,,,4:14,,,Tate
+1,,,,,,,,,,,,,,,4:13,,,Tate
+1,,,,,,,,,,,,,,,4:12,,,Tate
+1,,,,,,,,,,,,,,,4:11,,misses L mt kick inside L leg,Tate
+1,,,,,,,,,,,,,,,4:10,,,Tate
+1,,,,,,,,,,,,,,,4:09,,,Tate
+1,,,,,,,,,,,,,,,4:08,,,Tate
+1,,,,,,,,,,,,,,,4:07,,,Tate
+1,,,,,,,,,,,,,,,4:06,,,Tate
+1,,,,,,,,,,,,,,,4:05,,,Tate
+1,,,,,,,,,,,,,,,4:04,misses L jab,,Tate
+1,,,,,,,,,,,,,,,4:03,,,Tate
+1,,,,,,,,,,,,,,,4:02,,,Tate
+1,,,,,,,,,,,,,,,4:01,,,Tate
+1,,,,,,,,,,,,,,,4:00,misses R mt kick to low L lead leg,attempts one leg takedown,Tate
+1,,,,,,,,,,,,,,,3:59,,lands one leg takedown,Tate
+1,,,,,,,,,,,,,,,3:58,,,Tate
+1,,,,,,,,,,,,,,,3:57,gets up out of takedown,,Tate
+1,,,,,,,,,,,,,,,3:56,,,Tate
+1,,,,,,,,,,,,,,,3:55,,tries for L leg takedown,Tate
+1,,,,,,,,,,,,,,,3:54,,,Tate
+1,,,,,,,,,,,,,,,3:53,,,Tate
+1,,,,,,,,,,,,,,,3:52,,"misses R knee, fails takedown",Tate
+1,,,,,,,,,,,,,,,3:51,misses R cross to face,,Tate
+1,,,,,,,,,,,,,,,3:50,,,Tate
+1,,,,,,,,,,,,,,,3:49,,,Tate
+1,,,,,,,,,,,,,,,3:48,,,Tate
+1,,,,,,,,,,,,,,,3:47,misses R mt kick to low L lead leg,,Tate
+1,,,,,,,,,,,,,,,3:46,,,Tate
+1,,,,,,,,,,,,,,,3:45,,,Tate
+1,,,,,,,,,,,,,,,3:44,,,Tate
+1,,,,,,,,,,,,,,,3:43,,,Tate
+1,,,,,,,,,,,,,,,3:42,,,Tate
+1,,,,,,,,,,,,,,,3:41,,,Tate
+1,,,,,,,,,,,,,,,3:40,,,Tate
+1,,,,,,,,,,,,,,,3:39,,,Tate
+1,,,,,,,,,,,,,,,3:38,,,Tate
+1,,,,,,,,,,,,,,,3:37,,,Tate
+1,,,,,,,,,,,,,,,3:36,,,Tate
+1,,,,,,,,,,,,,,,3:35,,,Tate
+1,,,,,,,,,,,,,,,3:34,,,Tate
+1,,,,,,,,,,,,,,,3:33,,,Tate
+1,,,,,,,,,,,,,,,3:32,,,Tate
+1,,,,,,,,,,,,,,,3:31,,,Tate
+1,,,,,,,,,,,,,,,3:30,,,Tate
+1,,,,,,,,,,,,,,,3:29,,,Tate
+1,,,,,,,,,,,,,,,3:28,misses R cross to face,goes for takedown at waist,Tate
+1,,,,,,,,,,,,,,,3:27,,,Tate
+1,,,,,,,,,,,,,,,3:26,,fails takedown,Tate
+1,,,,,,,,,,,,,,,3:25,,,Tate
+1,,,,,,,,,,,,,,,3:24,,,Tate
+1,,,,,,,,,,,,,,,3:23,,,Tate
+1,,,,,,,,,,,,,,,3:22,,,Tate
+1,,,,,,,,,,,,,,,3:21,,,Tate
+1,,,,,,,,,,,,,,,3:20,,,Tate
+1,,,,,,,,,,,,,,,3:19,,,Tate
+1,,,,,,,,,,,,,,,3:18,misses R cross to face,"misses L jab, goes for waist takedown",Tate
+1,,,,,,,,,,,,,,,3:17,,,Tate
+1,,,,,,,,,,,,,,,3:16,,,Tate
+1,,,,,,,,,,,,,,,3:15,lands body throw takedown gets up,on floor reaching,Tate
+1,,,,,,,,,,,,,,,3:14,,,Tate
+1,,,,,,,,,,,,,,,3:13,misses illegal right knee to the face,gets up from floor,Tate
+1,,,,,,,,,,,,,,,3:12,,,Tate
+1,,,,,,,,,,,,,,,3:11,,,Tate
+1,,,,,,,,,,,,,,,3:10,,,Tate
+1,,,,,,,,,,,,,,,3:09,,,Tate
+1,,,,,,,,,,,,,,,3:08,,,Tate
+1,,,,,,,,,,,,,,,3:07,,,Tate
+1,,,,,,,,,,,,,,,3:06,,,Tate
+1,,,,,,,,,,,,,,,3:05,misses L jab,misses R cross to face,Tate
+1,,,,,,,,,,,,,,,3:04,"misses L jab, misses R cross to face",ducks,Tate
+1,,,,,,,,,,,,,,,3:03,,,Tate
+1,,,,,,,,,,,,,,,3:02,,,Tate
+1,,,,,,,,,,,,,,,3:01,,,Tate
+1,,,,,,,,,,,,,,,3:00,misses R cross to face,lands L push kick to body,Tate
+1,,,,,,,,,,,,,,,2:59,,,Tate
+1,,,,,,,,,,,,,,,2:58,,,Tate
+1,,,,,,,,,,,,,,,2:57,,,Tate
+1,,,,,,,,,,,,,,,2:56,,,Tate
+1,,,,,,,,,,,,,,,2:55,,,Tate
+1,,,,,,,,,,,,,,,2:54,,,Tate
+1,,,,,,,,,,,,,,,2:53,,,Tate
+1,,,,,,,,,,,,,,,2:52,,,Tate
+1,,,,,,,,,,,,,,,2:51,,,Tate
+1,,,,,,,,,,,,,,,2:50,misses L jab,misses L jab,Tate
+1,,,,,,,,,,,,,,,2:49,lands R cross,misses R cross to face,Tate
+1,,,,,,,,,,,,,,,2:48,,,Tate
+1,,,,,,,,,,,,,,,2:47,misses R cross to face,,Tate
+1,,,,,,,,,,,,,,,2:46,misses R cross to face,,Tate
+1,,,,,,,,,,,,,,,2:45,,,Tate
+1,,,,,,,,,,,,,,,2:44,misses R cross to face,,Tate
+1,,,,,,,,,,,,,,,2:43,,,Tate
+1,,,,,,,,,,,,,,,2:42,"misses L jab to face, ducks to avoid body takedown from missed L jab",misses L jab to face,Tate
+1,,,,,,,,,,,,,,,2:41,,,Tate
+1,,,,,,,,,,,,,,,2:40,misses R cross to face,,Tate
+1,,,,,,,,,,,,,,,2:39,,,Tate
+1,,,,,,,,,,,,,,,2:38,,,Tate
+1,,,,,,,,,,,,,,,2:37,,,Tate
+1,,,,,,,,,,,,,,,2:36,misses L jab,,Tate
+1,,,,,,,,,,,,,,,2:35,,,Tate
+1,,,,,,,,,,,,,,,2:34,lands R cross to face,misses L jab and ducks,Tate
+1,,,,,,,,,,,,,,,2:33,misses R cross to face,,Tate
+1,,,,,,,,,,,,,,,2:32,lands L hook to face,holding arms up,Tate
+1,,,,,,,,,,,,,,,2:31,misses R cross to face,holding arms up,Tate
+1,,,,,,,,,,,,,,,2:30,,,Tate
+1,,,,,,,,,,,,,,,2:29,,stumbles to ground moving backward,Tate
+1,,,,,,,,,,,,,,,2:28,lands R cross,on ground trying to stand,Tate
+1,,,,,,,,,,,,,,,2:27,lands L upper to face,stands up blocking face,Tate
+1,,,,,,,,,,,,,,,2:26,"misses R upper to face, misses R upper to face",blocking hits with arms guarding face,Tate
+1,,,,,,,,,,,,,,,2:25,,,Tate
+1,,,,,,,,,,,,,,,2:24,,,Tate
+1,,,,,,,,,,,,,,,2:23,lands L knee to face,,Tate
+1,,,,,,,,,,,,,,,2:22,,,Tate
+1,,,,,,,,,,,,,,,2:21,"misses L jab, misses R cross to face",guarding face with arms standing blocking hits,Tate
+1,,,,,,,,,,,,,,,2:20,,,Tate
+1,,,,,,,,,,,,,,,2:19,lands L jab to face,misses L push kick,Tate
+1,,,,,,,,,,,,,,,2:18,misses R cross to face,guarding face with arms standing blocking hits,Tate
+1,,,,,,,,,,,,,,,2:17,,,Tate
+1,,,,,,,,,,,,,,,2:16,misses R mt kick to inside R leg,,Tate
+1,,,,,,,,,,,,,,,2:15,"lands L jab to face, lands R cross to face",holding arms up,Tate
+1,,,,,,,,,,,,,,,2:14,,,Tate
+1,,,,,,,,,,,,,,,2:13,,,Tate
+1,,,,,,,,,,,,,,,2:12,,,Tate
+1,,,,,,,,,,,,,,,2:11,misses R cross to face,"dives for takedown, ends up on ground",Tate
+1,,,,,,,,,,,,,,,2:10,,,Tate
+1,,,,,,,,,,,,,,,2:09,,,Tate
+1,,,,,,,,,,,,,,,2:08,,,Tate
+1,,,,,,,,,,,,,,,2:07,,,Tate
+1,,,,,,,,,,,,,,,2:06,,,Tate
+1,,,,,,,,,,,,,,,2:05,,,Tate
+1,,,,,,,,,,,,,,,2:04,,,Tate
+1,,,,,,,,,,,,,,,2:03,,,Tate
+1,,,,,,,,,,,,,,,2:02,,,Tate
+1,,,,,,,,,,,,,,,2:01,,,Tate
+1,,,,,,,,,,,,,,,2:00,lands 2 hammer hits R face on top back,on ground,Tate
+1,,,,,,,,,,,,,,,1:59,lands 2 hammer hits L face on top back,on ground,Tate
+1,,,,,,,,,,,,,,,1:58,,,Tate
+1,,,,,,,,,,,,,,,1:57,,,Tate
+1,,,,,,,,,,,,,,,1:56,lands 2 hammer hits L face on top back,,Tate
+1,,,,,,,,,,,,,,,1:55,,,Tate
+1,,,,,,,,,,,,,,,1:54,,,Tate
+1,,,,,,,,,,,,,,,1:53,,,Tate
+1,,,,,,,,,,,,,,,1:52,,,Tate
+1,,,,,,,,,,,,,,,1:51,,,Tate
+1,,,,,,,,,,,,,,,1:50,lands RNC,,Tate
+1,,,,,,,,,,,,,,,1:49,,,Tate
+1,,,,,,,,,,,,,,,1:48,flips on back w RNC,,Tate
+1,,,,,,,,,,,,,,,1:47,,,Tate
+1,,,,,,,,,,,,,,,1:46,,taps out,Tate
+1,,,,,,,,,,,,,,,5:00,,,Pennington
+1,,,,,,,,,,,,,,,4:59,,,Pennington
+1,,,,,,,,,,,,,,,4:58,,,Pennington
+1,,,,,,,,,,,,,,,4:57,,,Pennington
+1,,,,,,,,,,,,,,,4:56,,,Pennington
+1,,,,,,,,,,,,,,,4:55,,,Pennington
+1,,,,,,,,,,,,,,,4:54,,,Pennington
+1,,,,,,,,,,,,,,,4:53,,,Pennington
+1,,,,,,,,,,,,,,,4:52,,,Pennington
+1,,,,,,,,,,,,,,,4:51,,,Pennington
+1,,,,,,,,,,,,,,,4:50,,,Pennington
+1,,,,,,,,,,,,,,,4:49,,,Pennington
+1,,,,,,,,,,,,,,,4:48,,,Pennington
+1,,,,,,,,,,,,,,,4:47,,,Pennington
+1,,,,,,,,,,,,,,,4:46,,,Pennington
+1,,,,,,,,,,,,,,,4:45,,,Pennington
+1,,,,,,,,,,,,,,,4:44,,,Pennington
+1,,,,,,,,,,,,,,,4:43,,,Pennington
+1,,,,,,,,,,,,,,,4:42,,,Pennington
+1,,,,,,,,,,,,,,,4:41,,,Pennington
+1,,,,,,,,,,,,,,,4:40,,,Pennington
+1,,,,,,,,,,,,,,,4:39,,,Pennington
+1,,,,,,,,,,,,,,,4:38,,,Pennington
+1,,,,,,,,,,,,,,,4:37,misses R mt kick to low L lead leg,falls avoiding the kick,Pennington
+1,,,,,,,,,,,,,,,4:36,,,Pennington
+1,,,,,,,,,,,,,,,4:35,,,Pennington
+1,,,,,,,,,,,,,,,4:34,,,Pennington
+1,,,,,,,,,,,,,,,4:33,,,Pennington
+1,,,,,,,,,,,,,,,4:32,,,Pennington
+1,,,,,,,,,,,,,,,4:31,,,Pennington
+1,,,,,,,,,,,,,,,4:30,,,Pennington
+1,,,,,,,,,,,,,,,4:29,,,Pennington
+1,,,,,,,,,,,,,,,4:28,,,Pennington
+1,,,,,,,,,,,,,,,4:27,,,Pennington
+1,,,,,,,,,,,,,,,4:26,,,Pennington
+1,,,,,,,,,,,,,,,4:25,misses R cross,,Pennington
+1,,,,,,,,,,,,,,,4:24,,,Pennington
+1,,,,,,,,,,,,,,,4:23,,,Pennington
+1,,,,,,,,,,,,,,,4:22,misses R mt kick to low L lead leg,blocks with L hand kick,Pennington
+1,,,,,,,,,,,,,,,4:21,,,Pennington
+1,,,,,,,,,,,,,,,4:20,,,Pennington
+1,,,,,,,,,,,,,,,4:19,misses R mt kick to low L lead leg,lifts L leg to avoid kick,Pennington
+1,,,,,,,,,,,,,,,4:18,,,Pennington
+1,,,,,,,,,,,,,,,4:17,,,Pennington
+1,,,,,,,,,,,,,,,4:16,,,Pennington
+1,,,,,,,,,,,,,,,4:15,,,Pennington
+1,,,,,,,,,,,,,,,4:14,misses R mt kick to low L lead leg,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,4:13,,,Pennington
+1,,,,,,,,,,,,,,,4:12,,,Pennington
+1,,,,,,,,,,,,,,,4:11,,,Pennington
+1,,,,,,,,,,,,,,,4:10,,,Pennington
+1,,,,,,,,,,,,,,,4:09,,,Pennington
+1,,,,,,,,,,,,,,,4:08,,,Pennington
+1,,,,,,,,,,,,,,,4:07,,,Pennington
+1,,,,,,,,,,,,,,,4:06,,,Pennington
+1,,,,,,,,,,,,,,,4:05,,,Pennington
+1,,,,,,,,,,,,,,,4:04,,,Pennington
+1,,,,,,,,,,,,,,,4:03,,,Pennington
+1,,,,,,,,,,,,,,,4:02,,,Pennington
+1,,,,,,,,,,,,,,,4:01,,,Pennington
+1,,,,,,,,,,,,,,,4:00,misses L jab to face,leans back to avoid jab,Pennington
+1,,,,,,,,,,,,,,,3:59,,,Pennington
+1,,,,,,,,,,,,,,,3:58,misses R mt kick to low L lead leg,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,3:57,,"stumbles, drops to ground off balance",Pennington
+1,,,,,,,,,,,,,,,3:56,,,Pennington
+1,,,,,,,,,,,,,,,3:55,,,Pennington
+1,,,,,,,,,,,,,,,3:54,feigns L mt kick to inside L lead leg,,Pennington
+1,,,,,,,,,,,,,,,3:53,,,Pennington
+1,,,,,,,,,,,,,,,3:52,,,Pennington
+1,,,,,,,,,,,,,,,3:51,missses R mt kick to low L lead leg,misses R cross,Pennington
+1,,,,,,,,,,,,,,,3:50,,,Pennington
+1,,,,,,,,,,,,,,,3:49,,,Pennington
+1,,,,,,,,,,,,,,,3:48,,,Pennington
+1,,,,,,,,,,,,,,,3:47,,,Pennington
+1,,,,,,,,,,,,,,,3:46,misses R mt kick to low L lead leg,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,3:45,,,Pennington
+1,,,,,,,,,,,,,,,3:44,,,Pennington
+1,,,,,,,,,,,,,,,3:43,,,Pennington
+1,,,,,,,,,,,,,,,3:42,"lands L jab to body, misses R cross to face",,Pennington
+1,,,,,,,,,,,,,,,3:41,,,Pennington
+1,,,,,,,,,,,,,,,3:40,,,Pennington
+1,,,,,,,,,,,,,,,3:39,misses L jab to body,,Pennington
+1,,,,,,,,,,,,,,,3:38,misses R mt kick to low L lead leg,blocks kick with L leg knee raised,Pennington
+1,,,,,,,,,,,,,,,3:37,,,Pennington
+1,,,,,,,,,,,,,,,3:36,,,Pennington
+1,,,,,,,,,,,,,,,3:35,,,Pennington
+1,,,,,,,,,,,,,,,3:34,misses R mt kick to low L lead leg,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,3:33,,"misses L jab to face, misses R cross",Pennington
+1,,,,,,,,,,,,,,,3:32,,misses L hook to face,Pennington
+1,,,,,,,,,,,,,,,3:31,misses R mt kick to low L lead leg,,Pennington
+1,,,,,,,,,,,,,,,3:30,,,Pennington
+1,,,,,,,,,,,,,,,3:29,,,Pennington
+1,,,,,,,,,,,,,,,3:28,,,Pennington
+1,,,,,,,,,,,,,,,3:27,,,Pennington
+1,,,,,,,,,,,,,,,3:26,misses L jab to body,,Pennington
+1,,,,,,,,,,,,,,,3:25,,,Pennington
+1,,,,,,,,,,,,,,,3:24,,,Pennington
+1,,,,,,,,,,,,,,,3:23,,,Pennington
+1,,,,,,,,,,,,,,,3:22,misses R mt kick to low L lead leg,lifts L leg to avoid kick,Pennington
+1,,,,,,,,,,,,,,,3:21,"misses L jab to face, misses R cross to face","misses L hook to face, misses R cross to face",Pennington
+1,,,,,,,,,,,,,,,3:20,pushes off with R forearm,getting push back on heels,Pennington
+1,,,,,,,,,,,,,,,3:19,,,Pennington
+1,,,,,,,,,,,,,,,3:18,,,Pennington
+1,,,,,,,,,,,,,,,3:17,misses L jab to body,blocks jab with raised L leg,Pennington
+1,,,,,,,,,,,,,,,3:16,,,Pennington
+1,,,,,,,,,,,,,,,3:15,,,Pennington
+1,,,,,,,,,,,,,,,3:14,,,Pennington
+1,,,,,,,,,,,,,,,3:13,,,Pennington
+1,,,,,,,,,,,,,,,3:12,"lands R mt kick to low L back of knee, misses L jab, misses R cross","blocks L jab, ducks back from R cross",Pennington
+1,,,,,,,,,,,,,,,3:11,"blocks L jab by raising L Shoulder, misses R cross to face","misses L jab to face , ducks R cross to face",Pennington
+1,,,,,,,,,,,,,,,3:10,pushes Face with R hand and away,attempts body clinch,Pennington
+1,,,,,,,,,,,,,,,3:09,,,Pennington
+1,,,,,,,,,,,,,,,3:08,,,Pennington
+1,,,,,,,,,,,,,,,3:07,,,Pennington
+1,,,,,,,,,,,,,,,3:06,,,Pennington
+1,,,,,,,,,,,,,,,3:05,,,Pennington
+1,,,,,,,,,,,,,,,3:04,misses L jab to body,misses L kick to body,Pennington
+1,,,,,,,,,,,,,,,3:03,,,Pennington
+1,,,,,,,,,,,,,,,3:02,,,Pennington
+1,,,,,,,,,,,,,,,3:01,,,Pennington
+1,,,,,,,,,,,,,,,3:00,"misses L jab to body, leans back from R cross to face",misses R cross to face,Pennington
+1,,,,,,,,,,,,,,,2:59,misses R cross,ducks R cross,Pennington
+1,,,,,,,,,,,,,,,2:58,,misses R cross to face,Pennington
+1,,,,,,,,,,,,,,,2:57,,,Pennington
+1,,,,,,,,,,,,,,,2:56,,,Pennington
+1,,,,,,,,,,,,,,,2:55,misses L jab to face,blocks w L arm,Pennington
+1,,,,,,,,,,,,,,,2:54,,,Pennington
+1,,,,,,,,,,,,,,,2:53,,,Pennington
+1,,,,,,,,,,,,,,,2:52,,,Pennington
+1,,,,,,,,,,,,,,,2:51,misses L jab to body,,Pennington
+1,,,,,,,,,,,,,,,2:50,,,Pennington
+1,,,,,,,,,,,,,,,2:49,,,Pennington
+1,,,,,,,,,,,,,,,2:48,misses R cross to face,blocks with L shoulder,Pennington
+1,,,,,,,,,,,,,,,2:47,misses L jab to face,blocks with R hand the jab,Pennington
+1,,,,,,,,,,,,,,,2:46,,,Pennington
+1,,,,,,,,,,,,,,,2:45,,,Pennington
+1,,,,,,,,,,,,,,,2:44,ducks ,misses R hook to face,Pennington
+1,,,,,,,,,,,,,,,2:43,,,Pennington
+1,,,,,,,,,,,,,,,2:42,,,Pennington
+1,,,,,,,,,,,,,,,2:41,misses R mt kick to low L lead leg,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,2:40,,,Pennington
+1,,,,,,,,,,,,,,,2:39,,,Pennington
+1,,,,,,,,,,,,,,,2:38,ducks and clinches waist pushes to cage,"misses L jab, misses R cross to face",Pennington
+1,,,,,,,,,,,,,,,2:37,,,Pennington
+1,,,,,,,,,,,,,,,2:36,,,Pennington
+1,,,,,,,,,,,,,,,2:35,,,Pennington
+1,,,,,,,,,,,,,,,2:34,,,Pennington
+1,,,,,,,,,,,,,,,2:33,,,Pennington
+1,,,,,,,,,,,,,,,2:32,,,Pennington
+1,,,,,,,,,,,,,,,2:31,,,Pennington
+1,,,,,,,,,,,,,,,2:30,,,Pennington
+1,,,,,,,,,,,,,,,2:29,,,Pennington
+1,,,,,,,,,,,,,,,2:28,,,Pennington
+1,,,,,,,,,,,,,,,2:27,,,Pennington
+1,,,,,,,,,,,,,,,2:26,lands R upper to face ,,Pennington
+1,,,,,,,,,,,,,,,2:25,misses R cross to face,blocks R cross with L arm against cage,Pennington
+1,,,,,,,,,,,,,,,2:24,,,Pennington
+1,,,,,,,,,,,,,,,2:23,,,Pennington
+1,,,,,,,,,,,,,,,2:22,lands R mt kick to low L back of knee,,Pennington
+1,,,,,,,,,,,,,,,2:21,,lands R cross to face,Pennington
+1,,,,,,,,,,,,,,,2:20,blocks L hook with R overhead arm,misses L hook to face,Pennington
+1,,,,,,,,,,,,,,,2:19,,,Pennington
+1,,,,,,,,,,,,,,,2:18,,,Pennington
+1,,,,,,,,,,,,,,,2:17,,,Pennington
+1,,,,,,,,,,,,,,,2:16,,,Pennington
+1,,,,,,,,,,,,,,,2:15,,,Pennington
+1,,,,,,,,,,,,,,,2:14,misses R mt kick to low L lead leg,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,2:13,,,Pennington
+1,,,,,,,,,,,,,,,2:12,,,Pennington
+1,,,,,,,,,,,,,,,2:11,,,Pennington
+1,,,,,,,,,,,,,,,2:10,,,Pennington
+1,,,,,,,,,,,,,,,2:09,,,Pennington
+1,,,,,,,,,,,,,,,2:08,,,Pennington
+1,,,,,,,,,,,,,,,2:07,,,Pennington
+1,,,,,,,,,,,,,,,2:06,lands R push kick to body,,Pennington
+1,,,,,,,,,,,,,,,2:05,"misses L jab, misses R cross to face",,Pennington
+1,,,,,,,,,,,,,,,2:04,,,Pennington
+1,,,,,,,,,,,,,,,2:03,,,Pennington
+1,,,,,,,,,,,,,,,2:02,,,Pennington
+1,,,,,,,,,,,,,,,2:01,,,Pennington
+1,,,,,,,,,,,,,,,2:00,,lands L knee in clinch control,Pennington
+1,,,,,,,,,,,,,,,1:59,,,Pennington
+1,,,,,,,,,,,,,,,1:58,,,Pennington
+1,,,,,,,,,,,,,,,1:57,,,Pennington
+1,,,,,,,,,,,,,,,1:56,misses R push kick to body,jumps back to avoid kick,Pennington
+1,,,,,,,,,,,,,,,1:55,,,Pennington
+1,,,,,,,,,,,,,,,1:54,misses L jab to face,,Pennington
+1,,,,,,,,,,,,,,,1:53,,,Pennington
+1,,,,,,,,,,,,,,,1:52,,,Pennington
+1,,,,,,,,,,,,,,,1:51,,,Pennington
+1,,,,,,,,,,,,,,,1:50,,,Pennington
+1,,,,,,,,,,,,,,,1:49,"misses R cross to face, misses R cross to face",ducks R cross,Pennington
+1,,,,,,,,,,,,,,,1:48,,,Pennington
+1,,,,,,,,,,,,,,,1:47,,,Pennington
+1,,,,,,,,,,,,,,,1:46,misses R mt kick to low L lead leg,,Pennington
+1,,,,,,,,,,,,,,,1:45,,,Pennington
+1,,,,,,,,,,,,,,,1:44,misses R cross to face,ducks R cross,Pennington
+1,,,,,,,,,,,,,,,1:43,,,Pennington
+1,,,,,,,,,,,,,,,1:42,,,Pennington
+1,,,,,,,,,,,,,,,1:41,misses R mt kick to body,,Pennington
+1,,,,,,,,,,,,,,,1:40,,misses L push kick against cage,Pennington
+1,,,,,,,,,,,,,,,1:39,,,Pennington
+1,,,,,,,,,,,,,,,1:38,,,Pennington
+1,,,,,,,,,,,,,,,1:37,,,Pennington
+1,,,,,,,,,,,,,,,1:36,ducks,"misses L jab, misses R cross",Pennington
+1,,,,,,,,,,,,,,,1:35,misses R upper to face,jumps back to avoid upper,Pennington
+1,,,,,,,,,,,,,,,1:34,,,Pennington
+1,,,,,,,,,,,,,,,1:33,,,Pennington
+1,,,,,,,,,,,,,,,1:32,,,Pennington
+1,,,,,,,,,,,,,,,1:31,,,Pennington
+1,,,,,,,,,,,,,,,1:30,"misses L jab, misses R cross to face",blocks and leans to side pushing R cross with Left hand,Pennington
+1,,,,,,,,,,,,,,,1:29,,,Pennington
+1,,,,,,,,,,,,,,,1:28,,,Pennington
+1,,,,,,,,,,,,,,,1:27,,,Pennington
+1,,,,,,,,,,,,,,,1:26,,,Pennington
+1,,,,,,,,,,,,,,,1:25,,,Pennington
+1,,,,,,,,,,,,,,,1:24,,,Pennington
+1,,,,,,,,,,,,,,,1:23,misses L jab to body,,Pennington
+1,,,,,,,,,,,,,,,1:22,,,Pennington
+1,,,,,,,,,,,,,,,1:21,,,Pennington
+1,,,,,,,,,,,,,,,1:20,,,Pennington
+1,,,,,,,,,,,,,,,1:19,,,Pennington
+1,,,,,,,,,,,,,,,1:18,,,Pennington
+1,,,,,,,,,,,,,,,1:17,,,Pennington
+1,,,,,,,,,,,,,,,1:16,,,Pennington
+1,,,,,,,,,,,,,,,1:15,,,Pennington
+1,,,,,,,,,,,,,,,1:14,,,Pennington
+1,,,,,,,,,,,,,,,1:13,feigns L mt kick to head,steps back drops L arm as if to block or push leg down,Pennington
+1,,,,,,,,,,,,,,,1:12,,,Pennington
+1,,,,,,,,,,,,,,,1:11,"misses L jab, misses R cross to face",misses R cross to face,Pennington
+1,,,,,,,,,,,,,,,1:10,,,Pennington
+1,,,,,,,,,,,,,,,1:09,,,Pennington
+1,,,,,,,,,,,,,,,1:08,,,Pennington
+1,,,,,,,,,,,,,,,1:07,,,Pennington
+1,,,,,,,,,,,,,,,1:06,,,Pennington
+1,,,,,,,,,,,,,,,1:05,,,Pennington
+1,,,,,,,,,,,,,,,1:04,,,Pennington
+1,,,,,,,,,,,,,,,1:03,,,Pennington
+1,,,,,,,,,,,,,,,1:02,,,Pennington
+1,,,,,,,,,,,,,,,1:01,,,Pennington
+1,,,,,,,,,,,,,,,1:00,,,Pennington
+1,,,,,,,,,,,,,,,0:59,,,Pennington
+1,,,,,,,,,,,,,,,0:58,,,Pennington
+1,,,,,,,,,,,,,,,0:57,,,Pennington
+1,,,,,,,,,,,,,,,0:56,,,Pennington
+1,,,,,,,,,,,,,,,0:55,,,Pennington
+1,,,,,,,,,,,,,,,0:54,,,Pennington
+1,,,,,,,,,,,,,,,0:53,,,Pennington
+1,,,,,,,,,,,,,,,0:52,misses R mt kick to low L lead leg,,Pennington
+1,,,,,,,,,,,,,,,0:51,,,Pennington
+1,,,,,,,,,,,,,,,0:50,,"misses L jab, misses running R cross to face",Pennington
+1,,,,,,,,,,,,,,,0:49,misses R cross to face,,Pennington
+1,,,,,,,,,,,,,,,0:48,,,Pennington
+1,,,,,,,,,,,,,,,0:47,,,Pennington
+1,,,,,,,,,,,,,,,0:46,,,Pennington
+1,,,,,,,,,,,,,,,0:45,,,Pennington
+1,,,,,,,,,,,,,,,0:44,"misses L jab, misses R cross to face",misses L hook to face,Pennington
+1,,,,,,,,,,,,,,,0:43,,,Pennington
+1,,,,,,,,,,,,,,,0:42,,,Pennington
+1,,,,,,,,,,,,,,,0:41,,,Pennington
+1,,,,,,,,,,,,,,,0:40,misses L mt kick to inside L lead leg,,Pennington
+1,,,,,,,,,,,,,,,0:39,,"feigns L mt kick to inside L leg, raises arms",Pennington
+1,,,,,,,,,,,,,,,0:38,,,Pennington
+1,,,,,,,,,,,,,,,0:37,,,Pennington
+1,,,,,,,,,,,,,,,0:36,,,Pennington
+1,,,,,,,,,,,,,,,0:35,,,Pennington
+1,,,,,,,,,,,,,,,0:34,,,Pennington
+1,,,,,,,,,,,,,,,0:33,,,Pennington
+1,,,,,,,,,,,,,,,0:32,,lands R push kick against cage,Pennington
+1,,,,,,,,,,,,,,,0:31,,,Pennington
+1,,,,,,,,,,,,,,,0:30,,,Pennington
+1,,,,,,,,,,,,,,,0:29,,,Pennington
+1,,,,,,,,,,,,,,,0:28,,feigns L push kick against cage,Pennington
+1,,,,,,,,,,,,,,,0:27,,attempts one legged takedown from cage,Pennington
+1,,,,,,,,,,,,,,,0:26,lands L knee to body with neck clinch,,Pennington
+1,,,,,,,,,,,,,,,0:25,,,Pennington
+1,,,,,,,,,,,,,,,0:24,,,Pennington
+1,,,,,,,,,,,,,,,0:23,misses L jab to face,,Pennington
+1,,,,,,,,,,,,,,,0:22,,,Pennington
+1,,,,,,,,,,,,,,,0:21,,,Pennington
+1,,,,,,,,,,,,,,,0:20,,,Pennington
+1,,,,,,,,,,,,,,,0:19,,,Pennington
+1,,,,,,,,,,,,,,,0:18,,,Pennington
+1,,,,,,,,,,,,,,,0:17,,lifts L leg for mt kick projected,Pennington
+1,,,,,,,,,,,,,,,0:16,,"misses L jab, misses R cross to face",Pennington
+1,,,,,,,,,,,,,,,0:15,,,Pennington
+1,,,,,,,,,,,,,,,0:14,misses R mt kick to low L lead leg,jumps back,Pennington
+1,,,,,,,,,,,,,,,0:13,,,Pennington
+1,,,,,,,,,,,,,,,0:12,,,Pennington
+1,,,,,,,,,,,,,,,0:11,,,Pennington
+1,,,,,,,,,,,,,,,0:10,misses R cross to face,leans back to avoid R cross to face,Pennington
+1,,,,,,,,,,,,,,,0:09,,"misses R cross, misses L hook to face",Pennington
+1,,,,,,,,,,,,,,,0:08,,misses R cross,Pennington
+1,,,,,,,,,,,,,,,0:07,misses R cross,,Pennington
+1,,,,,,,,,,,,,,,0:06,,,Pennington
+1,,,,,,,,,,,,,,,0:05,,,Pennington
+1,,,,,,,,,,,,,,,0:04,,,Pennington
+1,,,,,,,,,,,,,,,0:03,misses L jab,jumps back,Pennington
+1,,,,,,,,,,,,,,,0:02,,,Pennington
+1,,,,,,,,,,,,,,,0:01,,,Pennington
+1,,,,,,,,,,,,,,,0:00,misses R push kick to body,,Pennington
+1,,,,,,,,,,,,,,,5:00,,,Rousey
+1,,,,,,,,,,,,,,,4:59,,,Rousey
+1,,,,,,,,,,,,,,,4:58,,,Rousey
+1,,,,,,,,,,,,,,,4:57,,,Rousey
+1,,,,,,,,,,,,,,,4:56,,,Rousey
+1,,,,,,,,,,,,,,,4:55,,,Rousey
+1,,,,,,,,,,,,,,,4:54,missed a L jab to face,,Rousey
+1,,,,,,,,,,,,,,,4:53,missed a R cross to face,missed a L jab to face,Rousey
+1,,,,,,,,,,,,,,,4:52,,,Rousey
+1,,,,,,,,,,,,,,,4:51,missed a R cross to face,,Rousey
+1,,,,,,,,,,,,,,,4:50,missed a R push kick to body,,Rousey
+1,,,,,,,,,,,,,,,4:49,"missed a R cross to face, lands a L jab to face",missed a R cross to face,Rousey
+1,,,,,,,,,,,,,,,4:48,"missed a L jab to face, lands a R cross to face ",missed a L push kick to body,Rousey
+1,,,,,,,,,,,,,,,4:47,,,Rousey
+1,,,,,,,,,,,,,,,4:46,,,Rousey
+1,,,,,,,,,,,,,,,4:45,"missed a R cross, missed a L jab to face, missed a R cross to face",,Rousey
+1,,,,,,,,,,,,,,,4:44,,,Rousey
+1,,,,,,,,,,,,,,,4:43,missed a R push kick to body,,Rousey
+1,,,,,,,,,,,,,,,4:42,,,Rousey
+1,,,,,,,,,,,,,,,4:41,lands a R cross to face,"missed a L push kick to body, missed a L jab to face",Rousey
+1,,,,,,,,,,,,,,,4:40,turns body to side gets out of clinch,attempts head clinch,Rousey
+1,,,,,,,,,,,,,,,4:39,,,Rousey
+1,,,,,,,,,,,,,,,4:38,,misses L front push kick to body,Rousey
+1,,,,,,,,,,,,,,,4:37,"lands L jab to face, misses R cross to face","blocks, ducks cross",Rousey
+1,,,,,,,,,,,,,,,4:36,"misses L jab to face, misses R cross to face, ",blocks jab and cross,Rousey
+1,,,,,,,,,,,,,,,4:35,lands L jab to face face,,Rousey
+1,,,,,,,,,,,,,,,4:34,"misses R cross to face, misses L upper","blocks jab, pushes L upper hand from face",Rousey
+1,,,,,,,,,,,,,,,4:33,,,Rousey
+1,,,,,,,,,,,,,,,4:32,misses R cross to body,pushes off with block of R cross,Rousey
+1,,,,,,,,,,,,,,,4:31,,,Rousey
+1,,,,,,,,,,,,,,,4:30,lands L jab to face,"misses L jab to face, outreached by opponent",Rousey
+1,,,,,,,,,,,,,,,4:29,"lands R cross to face, ducks R cross left",misses R cross to face,Rousey
+1,,,,,,,,,,,,,,,4:28,"misses L jab to face, misses R cross to face, ","side steps R, misses L jab",Rousey
+1,,,,,,,,,,,,,,,4:27,,,Rousey
+1,,,,,,,,,,,,,,,4:26,,,Rousey
+1,,,,,,,,,,,,,,,4:25,misses R upper to face,,Rousey
+1,,,,,,,,,,,,,,,4:24,"lands L jab to face, misses R cross to face","misses L jab to face, blocks R cross",Rousey
+1,,,,,,,,,,,,,,,4:23,"misses L jab to face, lands R cross to face",,Rousey
+1,,,,,,,,,,,,,,,4:22,,,Rousey
+1,,,,,,,,,,,,,,,4:21,runs to and feigns a R cross to face,attempts head clinch,Rousey
+1,,,,,,,,,,,,,,,4:20,lands a R cross to face,,Rousey
+1,,,,,,,,,,,,,,,4:19,,loses attempted clinch,Rousey
+1,,,,,,,,,,,,,,,4:18,misses R cross to face ,blocks and ducks R cross to face against cage,Rousey
+1,,,,,,,,,,,,,,,4:17,,,Rousey
+1,,,,,,,,,,,,,,,4:16,lands a R cross to face,tries to block R cross to face but outreached overhead,Rousey
+1,,,,,,,,,,,,,,,4:15,"lands a L jab to face, lands R cross to face","stumbles against cage with L jab to face, receives R cross to face",Rousey
+1,,,,,,,,,,,,,,,4:14,lands downward L jab to face,falling to knees against cage,Rousey
+1,,,,,,,,,,,,,,,4:13,referee gets between and stops fight TKO,,Rousey

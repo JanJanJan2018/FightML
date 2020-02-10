@@ -1,0 +1,559 @@
+---
+title: "Simulated VulfenSarah hits landed with first 50 Wolfey as a Testing Set"
+author: "Janis Corona"
+date: "11/17/2019"
+output:
+  html_document: default
+  word_document: default
+---
+
+
+## put in the first 50 samples of Wolfey as the testing set to see the
+prediction accuracy of hits landed with VulfenSarah hits landed comparison
+
+
+```{r}
+Vulfen1 <- read.csv('SarahWolfEaten_addedFeatures2.csv', 
+                       sep=',', header=TRUE, 
+                       na.strings=c('','NA'))
+```
+
+```{r}
+Wolfey <- read.csv('wolfey_addedFeatures.csv', 
+                       sep=',', header=TRUE, nrows=50,
+                       na.strings=c('','NA'))
+
+```
+
+```{r}
+Wolfey <- Wolfey[,c(1:7,8:15,48:155)]#omit all X1 landed and x2 received
+Vulfen <- Vulfen1[,c(1:7,8:15,48:155)]#omit all X1 landed and x2 received
+```
+
+```{r ,warning=FALSE,error=FALSE,message=FALSE}
+library(caret)
+library(randomForest)
+library(MASS)
+library(gbm)
+library(dplyr)
+```
+
+```{r cars}
+set.seed(189678345)
+```
+
+```{r}
+
+trainingSet <- Vulfen
+testingSet <- Wolfey
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(rfMod <- train(TotLandsX1~., method='rf', data=(trainingSet), 
+                           trControl=trainControl(method='cv'), number=5))
+
+```
+
+```{r}
+plot(rfMod)
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(gbmMod <- train(TotLandsX1~., method='gbm', data=trainingSet, verbose=FALSE ))
+
+```
+
+```{r}
+plot(gbmMod)
+```
+
+```{r}
+predRF <- round(predict(rfMod, testingSet))
+predGbm <- round(predict(gbmMod, testingSet))
+
+predDF <- data.frame(predRF, predGbm, type=testingSet$TotLandsX1)
+predDF
+
+```
+
+Accuracy of the random forest algorithm:
+```{r}
+
+sum <- sum(predRF==testingSet$TotLandsX1)
+length <- length(testingSet$TotLandsX1)
+accuracy_rfMod <- (sum/length) 
+accuracy_rfMod
+```
+
+Accuracy of the Generalized Boosted Machines algorithm:
+```{r}
+sum <- sum(predGbm==testingSet$TotLandsX1)
+accuracy_Gbm <- (sum/length) 
+accuracy_Gbm
+```
+
+Now, use the K-nearest neighbor or KNN algorithm.
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(knnMod <- train(TotLandsX1 ~ .,
+                            method='knn', preProcess=c('center','scale'),
+                            tuneLength=10, trControl=trainControl(method='cv'), data=trainingSet))
+
+```
+
+```{r}
+plot(knnMod)
+```
+From the above plot n=15 seems to have the lowest Root mean Squared error.
+
+Now, use the recursive partitioning Trees alogorithm, a type of decision trees methos.
+```{r, warning=FALSE}
+system.time(rpartMod <- train(TotLandsX1~ ., method='rpart', tuneLength=9, data=trainingSet))
+```
+
+```{r}
+plot(rpartMod)
+
+```
+
+Now, use the generalized linear machines algorithm that encompasses linear and logistic regression models.
+```{r, warning=FALSE}
+system.time(glmMod <- train(TotLandsX1~ ., 
+                            method='glm', data=trainingSet))
+```
+
+```{r, error=FALSE, warning=FALSE, message=FALSE}
+predKNN <- round(predict(knnMod, testingSet))
+predRPART <- round(predict(rpartMod, testingSet))
+predGLM <- round(predict(glmMod, testingSet))
+
+df3 <- cbind(predKNN, predRPART, predGLM,testingSet$TotLandsX1)
+colnames(df3)[4] <- 'TrueValue'
+head(df3);tail(df3)
+```
+
+The above output shows the predicted values for the KNN, Rpart, and GLM models as well as the actual or true value.
+
+
+```{r}
+length=length(testingSet$TotLandsX1)
+
+sumKNN <- sum(predKNN==testingSet$TotLandsX1)
+sumRPart <- sum(predRPART==testingSet$TotLandsX1)
+sumGLM <- sum(predGLM==testingSet$TotLandsX1)
+```
+
+The accuracy in prediction for Random Forest, GBM, KNN, Rpart, and GLM are (respectively):
+```{r}
+accuracy_KNN <- sumKNN/length 
+accuracy_RPART <- sumRPart/length 
+accuracy_GLM <- sumGLM/length 
+
+accuracy_rfMod; accuracy_Gbm; accuracy_KNN; accuracy_RPART; accuracy_GLM
+```
+From the above algorithm accuracies, GBM and Rpart scored the best with 86%, then random forest with 72%.
+
+
+```{r}
+predDF3 <- data.frame(predRF,predGbm,df3)
+head(predDF3);tail(predDF3)
+```
+
+
+```{r}
+
+colnames(predDF3)
+
+```
+
+```{r}
+results <- c(round(accuracy_rfMod,2),  
+             round(accuracy_Gbm,2), 
+             round(accuracy_KNN,2), round(accuracy_RPART,2),
+             round(accuracy_GLM,2), 
+             round(100,2))
+
+results <- as.factor(results)
+results <- t(data.frame(results))
+colnames(results) <- colnames(predDF3)
+Results <- rbind(predDF3, results) 
+head(Results);tail(Results)
+
+```
+
+```{r}
+best <- order(results, decreasing=TRUE)
+bestResults <- Results[,best[1:3]]
+bestResults
+```
+
+
+```{r, warning=FALSE, error=FALSE, message=FALSE}
+library(dplyr)
+BestPredictedHit <- subset(Results, Results$TrueValue == 1 | Results$TrueValue ==2)
+length=length(BestPredictedHit$TrueValue)
+
+sumRF <- sum(BestPredictedHit$predRF==BestPredictedHit$TrueValue)
+sumGbm <- sum(BestPredictedHit$predGbm==BestPredictedHit$TrueValue)
+sumKNN <- sum(BestPredictedHit$predKNN==BestPredictedHit$TrueValue)
+sumRPart <- sum(BestPredictedHit$predRPART==BestPredictedHit$TrueValue)
+sumGLM <- sum(BestPredictedHit$predGLM==BestPredictedHit$TrueValue)
+
+accuracy_RF <- round(sumRF/length,2)
+accuracy_Gbm <- round(sumGbm/length,2) 
+accuracy_KNN <- round(sumKNN/length,2) 
+accuracy_RPART <- round(sumRPart/length,2) 
+accuracy_GLM <- round(sumGLM/length,2) 
+Truth <- round(sum(BestPredictedHit$TrueValue==BestPredictedHit$TrueValue)/length,2)
+
+HitAccuracy <- c(accuracy_RF,accuracy_Gbm,accuracy_KNN,accuracy_RPART,
+                 accuracy_GLM,Truth)
+HitAccuracy <- t(data.frame(as.factor(HitAccuracy)))
+colnames(HitAccuracy) <- colnames(BestPredictedHit)
+BestPredictedHit1 <- rbind(BestPredictedHit,HitAccuracy)
+row.names(BestPredictedHit1)[8] <- 'Accuracy'
+BestPredictedHit1
+```
+
+
+KNN and GLM were more accurate in guessing which simulations would produce a hit landed by VulfenSarah.
+
+
+```{r}
+testHits <- testingSet[row.names(BestPredictedHit1)[1:7],]
+Hits <-cbind(BestPredictedHit1[1:7,],testHits)
+Hits
+```
+
+
+The above table shows the 7 simulations of another fighter in our trained model and the results of those hits that were landed in this testing set against the prediction of a hit landed with those algorithms for machine learning: random forest (rf), global boosted machines (gbm), k nearest neighbors (KNN), recursive partitioning and regression trees (rpart), generalized linear models (glm), and the true testing set value aiming to predict for hits landed. 
+
+
+
+***
+
+Aside, put aside the above, some time later as in months. What about looking at those instances where Vulfen lands 2 hits in one second and plotting this against the number of hits and seconds that passed? Lets do that.
+
+***
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+library(tidyr)
+```
+
+
+Aside: This is the un-altered table, everything works as it should, the code to grab and extract each action is good. I originally thought there was a calculation problem, but the fields for X1's landed,missed, received actions were omitted in the beginning of this script. Carry on.
+```{r}
+X1_2plus <- subset(Vulfen1, Vulfen1$TotLandsX1 > 1) 
+X1_2plus_lands_X1 <- X1_2plus[,c(2,4:8,20:47)]
+X1_2plus_lands_X1
+```
+
+```{r}
+x1_2plus_lands_tidy <- gather(X1_2plus_lands_X1, 'actionReaction', 'actionCounts', 8:34)
+x1_2plus_lands_tidy
+```
+
+
+
+```{r}
+x1_2plus_lands_counts <- subset(x1_2plus_lands_tidy, x1_2plus_lands_tidy$actionCounts > 0)
+x1_2plus_lands_counts
+```
+
+
+Now, for plotting the actions that were landed for those observations or seconds that had more than one sequence of actions land by X1.
+```{r, warning=FALSE, error=FALSE, message=FALSE}
+library(ggplot2)
+
+ggplot(data = x1_2plus_lands_counts, aes(x=actionReaction, y=SecondsLastRoundAction, fill=Notes)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 8, by=1), limits=c(0,8))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Landed Actions by X1 versus 3 Opponents')+
+  ylab('Seconds Since Last Action by X1')+
+  xlab('Action Landed in Second with 2 Sequential Landed')
+
+
+```
+
+***
+The above bar chart isn't really showing a lot that explains better than the table, X1_2plus_lands_X1.
+```{r}
+X1_2plus_lands_X1[,c(2,6,7:34)]
+```
+
+***
+Looking at the above table, all the sequential actions are in the first sequence. The initial code has to be examined to determine why two actions are in one instance and the first sequence only. The jab and then the cross are fine for sequence 1 then sequence 2, but the knee and kick both in sequence 1 has to be examined to find the error in the Pennington rounds.
+```{r}
+Vulfen1[c(77,93),]
+```
+
+Looking at the above, this instance actually is only one hit landed, the way the regex was used in grabbing the actions, it selected the 'land.*knee' when it was a description of body location. In further action and reaction commentary the body location of hit could be omitted or change the knee strike column name of action to 'kneeStrike' to solve this problem.
+
+We will omit the Pennington entries for now and plot the results.
+```{r}
+plot2plus <- subset(x1_2plus_lands_counts, x1_2plus_lands_counts$Notes != 'Pennington')
+plot2plus
+```
+
+
+```{r}
+ggplot(data = plot2plus, aes(x=Notes, y=SecondsLastRoundAction, fill=actionReaction)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 8, by=1), limits=c(0,8))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Actions that Landed in Sequential Pairing for X1')+
+  ylab('Seconds Since Last Action by X1')+
+  xlab('Action Landed in Second with 2 Sequential Landed')
+
+```
+
+***
+Keep in mind the opponents for this data collection were Pennington, Rousey, and Tate against Nunez (Vulfen) but that the only second observations with more than one hit landed by Nunez were the observations with Rousey or Tate, and each of these rounds were less than two minutes out of a five minute first round with Nunez. The combo favored for quick knockouts or technical knockouts by Nunez is the jab and cross (or strong right hand punch to face). We could rearrange the visual to show the cumulative hits missed with all three opponents for the first minute to see if Nunez gives it away that she plans on fighting all five of the five minute rounds or wants to damage the opponent. 
+
+Why don't we do that and put some skills to use.
+```{r}
+oneMinute <- subset(Vulfen1, (Vulfen1$SecondsIntoRound < 60) & (Vulfen1$TotLandsX1 > 0 | (Vulfen1$TotMissedX1 > 0)))
+dim(oneMinute)
+head(colnames(oneMinute),20)
+```
+
+Lets use the SecondsIntoRound, SecondsLastRoundAction, cmTotHits columns for X1, TotLandsX1, and cumulative actions of X2 as well as the Notes which is the opponent name, and also the sequential action columns.
+```{r}
+Minute <- oneMinute[,c(2,4:13,20:182)]
+Minute_tidy <- gather(Minute, 'action','actionCount',13:174)
+Minute_tidy1 <- subset(Minute_tidy, Minute_tidy$actionCount > 0)
+Minute_tidy1
+```
+
+
+We have a subset of data above that is when an action as an attempt was made by either X1 or X2 for observations less than one minute into the round. The opponent name is in the Notes column. Cumulative hits landed and missed for both are available as well as the seconds that have passed since the last action in the round. 
+
+Lets look at the action to group by it using dplyr and get a count of the action that is attempted most by X1 only. This means we should remove the X2 actions.Remove any field with 'X2' in the name as it won't be needed for now.
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+library(dplyr)
+
+X2actions <- grep('X2', colnames(Minute))
+Minute2 <- Minute[,-(X2actions)]
+
+minute2_tidy <- gather(Minute2, 'action','actionCount',10:90)
+
+minute2_tidy1 <- subset(minute2_tidy, minute2_tidy$actionCount > 0)
+
+actionsGrouped <- minute2_tidy1 %>% group_by(action) %>% count()
+mostAction <- actionsGrouped[order(actionsGrouped$n,decreasing=TRUE),]
+mostAction
+```
+
+We can see the most attempted action is the kick but missed, then the cross that is missed, then the jab missed. But following those attempted actions that were missed, the most landed action by X1 is the jab, then the cross in the 2nd sequence or combo order. But the Cross is also a first attempted action. The landed hits most taken by X1 are the jab and cross from these samples. 
+
+Lets look at the jabs only first then the cross only. We will look at the seconds since last action, the opponent as Notes, and cumulative hits missed and landed by X1. But not in the same bar chart because that is beyond the three dimension capability. 
+```{r}
+jab <- minute2_tidy1[grep('Jab', minute2_tidy1$action),]
+jab
+```
+
+```{r}
+ggplot(data = jab, aes(x=Notes, y=SecondsLastRoundAction, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 22, by=1), limits=c(0,22))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Jab Actions Attempted in Sequential Pairing for X1')+
+  ylab('Seconds Since Last Action by X1')+
+  xlab('Opponent')
+```
+
+Take note that from the outcomes of these fights and after looking at the plot above, Pennington went to decision and lasted all five rounds of five minutes each and has more seconds between actions attempted by Nunez looking at the most landed hit and attempted hit by Nunez, the jab. The Rousey fight had less seconds between actions attempted by Nunez and lasted under one minute with an outcome of technical knockout. The Tate fight is in the middle and lasted under five minutes of the first round. 
+
+***
+Next, the jabs attempted and missed by Nunez on opponents for cumulative hits missed for Nunez at the time she makes the attempted hit with her most used strike landed, the jab.
+```{r}
+ggplot(data = jab, aes(x=Notes, y=cmTotHitsM.X1, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 22, by=1), limits=c(0,22))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Jab Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative Hits Missed by X1')+
+  xlab('Opponent')
+```
+
+Nunez has more cumulative hits missed, which means she is taking more risks to get the fight over and done with when looking at her short lived fighting event with Rousey as you can see in the bar chart above.
+
+***
+
+Now, for the cumulative hits landed by Nunez against her opponent at each sequential second that she attempt a strike against her opponent.
+```{r}
+ggplot(data = jab, aes(x=Notes, y=cmTotHitsL.X1, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 22, by=1), limits=c(0,22))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Jab Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative Hits landed by X1')+
+  xlab('Opponent')
+
+```
+
+As we can see from the plot above, for the first minute of her fight with the three opponents, she has made more attempted hits that landed by way of the jab against Rousey, having had 14 cumulative jabs landed on Rousey in under one minute.
+
+***
+
+Now lets look at the power strike, Nunez's cross, on her opponent, which is her 2nd most attempted strike against her opponent.
+```{r}
+cross <- minute2_tidy1[grep('Cross', minute2_tidy1$action),]
+cross
+
+```
+
+The above table shows the cross actions attempted by X1.
+```{r}
+ggplot(data = cross, aes(x=Notes, y=SecondsLastRoundAction, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 15, by=1), limits=c(0,15))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Right Cross Actions Attempted in Sequential Pairing for X1')+
+  ylab('Seconds Since Last Action by X1')+
+  xlab('Opponent')
+```
+
+The above bar chart shows that Tate is not in the list of opponents she attempted to hit with her right cross, but Rousey got all attempts in the 1st, 2nd, and 3rd sequences of at least one of the one-second observations under one minute of the first round. The seconds since the last action by Nunez were more frequent in the first round than with Pennington at 12 seconds since last action. 
+
+***
+
+Now, look at the cumulative hits missed for x1-Nunez and cross attempts on her opponents.
+```{r}
+ggplot(data = cross, aes(x=Notes, y=cmTotHitsM.X1, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 22, by=1), limits=c(0,22))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Right Cross Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative hits missed')+
+  xlab('Opponent')
+```
+
+Looking at the bar chart above for the amount of hits missed up to the point that X1 attempts a right cross on her opponent, Rousey has a much larger number of hits missed than Pennington. 
+
+***
+
+Now, look at the cumulative hits landed for X1's right cross on her opponents during the first minute of the first round.
+```{r}
+ggplot(data = cross, aes(x=Notes, y=cmTotHitsL.X1, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 15, by=1), limits=c(0,15))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Right Cross Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative hits landed')+
+  xlab('Opponent')
+
+
+```
+
+As we can see from the above bar chart, X1 had more right cross strikes against Rousey in the 2nd sequence of a combo and first sequence. But even the 3rd sequence had a hit when she had 2 hits landed. The fact that it is higher for her when using it as the 2nd strike of a combo when she had 13 hits landed, and as the first of a combo when she had 11 hits landed, shows she wanted to win, and most likely wasn't deterred by her opponent. To assert that last assumption, we would have to look at the cumulative hits missed and/or landed by her opponent to confirm X1 wasn't deterred when making her selection of strikes to take down her opponent.
+
+```{r}
+X2actions <- grep('X2', colnames(Minute))
+X2act <- X2actions[4:84]
+Minute3 <- Minute[,-(X2act)]
+
+minute3_tidy <- gather(Minute3, 'action','actionCount',13:93)
+
+minute3_tidy1 <- subset(minute3_tidy, minute3_tidy$actionCount > 0)
+```
+
+
+```{r}
+cross1 <- minute3_tidy1[grep('Cross', minute3_tidy1$action),]
+cross1
+
+```
+
+```{r}
+ggplot(data = cross1, aes(x=Notes, y=cmTotHitsM.X2, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 15, by=1), limits=c(0,15))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Right Cross Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative hits Missed by X2-opponent')+
+  xlab('Opponent')
+```
+
+The above chart shows that Rousey as X2 had up to 10 hits cumulatively missed at the moment that Nunez or X1 attempted a right cross in every three sequence of an observational second in the round 1 of this fight event. 
+
+
+```{r}
+ggplot(data = cross1, aes(x=Notes, y=cmTotHitsL.X2, fill=action)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 15, by=1), limits=c(0,15))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Right Cross Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative hits Landed by X2-opponent')+
+  xlab('Opponent')
+```
+
+The above bar chart shows that The cumulative hits landed by the opponent or X2 were zero for the actions attempted by Nunez using her 2nd most attempted strike, the right cross.
+
+
+***
+
+Now, for more curiosity and in answering some questions about the kick, which is Nunez's most attempted strike against her opponent in under one minute for these three opponents' first round fight with said fighter. She didn't land any kicks, but when the fight is just sizing up or opening up the opponent, she used the front kick at times or the muay thai kick to disable the opponent's anchor or leverage against her.
+```{r}
+kick <- minute3_tidy1[grep('Kick', minute3_tidy1$action),]
+kick
+
+```
+
+
+```{r}
+ggplot(data = kick, aes(x=cmTotHitsM.X1, y=SecondsLastRoundAction, fill=Notes)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 22, by=1), limits=c(0,22))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Kicking Actions Attempted in Sequential Pairing for X1')+
+  xlab('Cumulative Hits missed by X1')+
+  ylab('Seconds that Passed Since Last Action')
+```
+
+
+The above bar chart is a different arrangement, but shows that the time since last action and cumulative hits missed up to the point that X1-Nunez attempt a kick, and all kicks in the first minute were missed, against her opponent. We can see that after 22 seconds she made a kicking attempt with Pennington, and made more kick attempts against Pennington that lasted the whole event of 5-five minute rounds and a win for Nunez through a decision by the judges. Her attempts to kick Rousey in under a minute are actually less than Pennington and Tate. I recall that Rousey didn't shake Nunez's hand before the fight, and this could mean it was a grudge fight where Nunez looks to knock out her opponent with her upper body strikes than her lower body strikes. 
+
+To confirm her upper body strikes are X1's go to in ending a fight early, look at her cumulative hits landed in comparison to the seconds that passed since the last attempted action by X1.
+
+
+```{r}
+ggplot(data = kick, aes(x=cmTotHitsL.X1, y=SecondsLastRoundAction, fill=Notes)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 22, by=1), limits=c(0,22))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Kicking Actions Attempted in Sequential Pairing for X1')+
+  xlab('Cumulative Hits Landed by X1')+
+  ylab('Seconds that Passed Since Last Action')
+```
+The above bar chart isn't making sense as it shows negative values for cumulative hits landed by X1. And the values are discreet, so the bars should be exactly on an integer of the x-axis but as we see above are not. 
+
+
+Here is a better chart by switching the x and y labels.
+```{r}
+ggplot(data = kick, aes(y=cmTotHitsL.X1, x=SecondsLastRoundAction, fill=Notes)) +
+  geom_bar(stat='identity', position=position_dodge())+
+  scale_y_continuous(breaks = seq(0, 6, by=1), limits=c(0,6))+
+  scale_fill_brewer(palette='Paired') + 
+  ggtitle('Kicking Actions Attempted in Sequential Pairing for X1')+
+  ylab('Cumulative Hits Landed by X1')+
+  xlab('Seconds that Passed Since Last Action')
+```
+
+Lets look at the data table and see if Rousey is the only one receiving attempted kicks.
+```{r}
+kick2 <- kick[,c(2,4,12:14)]
+kick2
+```
+
+
+By looking at the chart above, only Rousey was the opponent that received any hits that landed when Nunez attempted a kick as a strike. Nunez made kick attempts at the other two opponents, but she hadn't landed any hits by the time she attempted to kick those other opponents. Nunez, did however miss a number of strikes attempted on her other opponents when attempting a kick.
+
+This was an interesting analysis of the fighter Nunez, than also compared results from Mazvidal earlier using machine learning models: random forest, recursive partitioning trees or decision trees, generalized linear models like liner and logistic regression, k-nearest neighber, and generalized boosted machines also a tree algorithm. The best predictors were the tree algorithms in using the samples of Mazvidal as the testing set for Nunez's model built only on her sampled second observations in her first round. The comparison with the best algorithm scored 86% meaning Mazvidal is 86% similar in fighting style to Nunez.
+
+The other comparisons were for analyzing and using visualizations to understand Nunez's method in fighting. She uses more jabs and crosses, and leaves more seconds between actions of fights she wants to play out for longer as in with Pennington. If she wants to end the fight early or uses a grudge fight method, her style changes, hits become more frequent, and this is based on the attempted hits her opponent makes towards her, as Rousey made more attempts that coincidentally missed, while the seconds between fight actions on the part of Nunez on Rousey were much smaller. 
+
+If we were to use this understanding and see how her next opponent acts or behaves towards Nunez and other factors before the fight, we could determine how long the fight is predicted to last, but this was only the first round of three fights, when she has fought many fights and had many fights last more than one round. Measuring her exhaustion as a new feature, if the fight is a grudge fight as another feature, if the opponent is a dominating or aggressive bat out of the cave type as another feature, and so on.
+
+
+

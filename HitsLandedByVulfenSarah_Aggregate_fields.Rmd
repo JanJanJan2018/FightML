@@ -1,0 +1,186 @@
+---
+title: "HitsLandedByVulfenSarah_Aggregate_fields"
+author: "Janis Corona"
+date: "11/17/2019"
+output: html_document
+---
+  
+## 'X1' is VulfenSarah and 'X2' is Opponent in Notes N**es is VulfenSarah
+
+```{r}
+vulfen <- read.csv('SarahWolfEaten_addedFeatures.csv', 
+                       sep=',', header=TRUE, 
+                       na.strings=c('','NA'))
+```
+
+```{r}
+vulfen
+```
+
+```{r}
+head(vulfen)
+```
+
+```{r}
+colnames(vulfen)
+```
+
+```{r}
+Vulfen <- vulfen[,c(1:7,8:15,17)]
+```
+
+```{r ,warning=FALSE,error=FALSE,message=FALSE}
+library(caret)
+library(randomForest)
+library(MASS)
+library(gbm)
+library(dplyr)
+```
+
+```{r cars}
+set.seed(189678345)
+```
+
+```{r}
+inTrain <- createDataPartition(y=vulfen$TotLandsX1, p=0.7, list=FALSE)
+
+trainingSet <- Vulfen[inTrain,]
+testingSet <- Vulfen[-inTrain,]
+
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(rfMod <- train(TotLandsX1~., method='rf', data=(trainingSet), 
+                           trControl=trainControl(method='cv'), number=5))
+
+```
+
+```{r}
+plot(rfMod)
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(gbmMod <- train(TotLandsX1~., method='gbm', data=trainingSet, verbose=FALSE ))
+
+```
+
+```{r}
+plot(gbmMod)
+```
+
+```{r}
+predRF <- round(predict(rfMod, testingSet))
+predGbm <- round(predict(gbmMod, testingSet))
+
+predDF <- data.frame(predRF, predGbm, type=testingSet$TotLandsX1)
+predDF
+
+```
+
+```{r, warning=FALSE, error=FALSE,message=FALSE}
+CombinedModels <- train(type~., method='gam', data=predDF)
+CombinedPredictions <- round(predict(CombinedModels, predDF))
+CombinedPredictions
+
+```
+
+```{r}
+sum <- sum(CombinedPredictions==testingSet$TotLandsX1)
+length <- length(testingSet$TotLandsX1)
+accuracy_CP1 <- sum/length 
+
+sum <- sum(predRF==testingSet$TotLandsX1)
+length <- length(testingSet$TotLandsX1)
+accuracy_rfMod <- (sum/length) 
+
+sum <- sum(predGbm==testingSet$TotLandsX1)
+accuracy_Gbm <- (sum/length) 
+
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+system.time(knnMod <- train(TotLandsX1  ~ .,
+                            method='knn', preProcess=c('center','scale'),
+                            tuneLength=10, trControl=trainControl(method='cv'), data=trainingSet))
+
+```
+
+```{r}
+plot(knnMod)
+```
+
+```{r, warning=FALSE}
+system.time(rpartMod <- train(TotLandsX1 ~ ., method='rpart', tuneLength=9, data=trainingSet))
+```
+
+```{r}
+plot(rpartMod)
+
+```
+
+```{r, warning=FALSE}
+system.time(glmMod <- train(TotLandsX1 ~ ., 
+                            method='glm', data=trainingSet))
+```
+
+```{r, error=FALSE, warning=FALSE, message=FALSE}
+predKNN <- round(predict(knnMod, testingSet))
+predRPART <- round(predict(rpartMod, testingSet))
+predGLM <- round(predict(glmMod, testingSet))
+
+df3 <- cbind(predKNN, predRPART, predGLM,testingSet$TotLandsX1)
+colnames(df3)[4] <- 'TrueValue'
+
+```
+
+```{r}
+length=length(testingSet$TotLandsX1)
+
+sumKNN <- sum(predKNN==testingSet$TotLandsX1)
+sumRPart <- sum(predRPART==testingSet$TotLandsX1)
+sumGLM <- sum(predGLM==testingSet$TotLandsX1)
+
+accuracy_KNN <- sumKNN/length 
+accuracy_RPART <- sumRPart/length 
+accuracy_GLM <- sumGLM/length 
+
+predDF3 <- data.frame(predRF,predGbm,df3)
+
+```
+
+```{r, warning=FALSE}
+system.time(CombinedModels <- train(TrueValue ~ ., method='gam', data=predDF3))
+```
+
+```{r}
+CombinedPredictions2 <- round(predict(CombinedModels, predDF3))
+accuracy_CP2 <- sum(CombinedPredictions2==testingSet$TotLandsX1)/length 
+
+predDF4 <- data.frame(predDF3, CombinedPredictions2)
+colnames(predDF4)
+
+```
+
+```{r}
+predDF4 <- predDF4[,c(1:5,7,6)]
+colnames(predDF4)
+
+```
+
+```{r}
+results <- c(round(accuracy_rfMod,2),  
+             round(accuracy_Gbm,2), 
+             round(accuracy_KNN,2), round(accuracy_RPART,2),
+             round(accuracy_GLM,2), 
+             round(accuracy_CP2,2), round(100,2))
+
+results <- as.factor(results)
+results <- t(data.frame(results))
+colnames(results) <- colnames(predDF4)
+Results <- rbind(predDF4, results) 
+Results
+
+```
+
+
+
