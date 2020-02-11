@@ -3,8 +3,8 @@ title: "Simulated VulfenSarah (Nunez) hits landed with first 50 Wolfey (Mazvidal
 author: "Janis Corona"
 date: "11/17/2019"
 output:
-  html_document: default
   word_document: default
+  html_document: default
 ---
 
 This script was edited months afterwards to correct the regex error with the knee to body
@@ -15,7 +15,7 @@ prediction accuracy of hits landed with VulfenSarah hits landed comparison
 
 
 ```{r}
-Vulfen1 <- read.csv('SarahWolfEaten_addedFeatures2.csv', 
+Vulfen1 <- read.csv('Nunez-ML-Analysis-editedRegex.csv', 
                        sep=',', header=TRUE, 
                        na.strings=c('','NA'))
 ```
@@ -105,7 +105,7 @@ system.time(knnMod <- train(TotLandsX1 ~ .,
 ```{r}
 plot(knnMod)
 ```
-From the above plot n=15 seems to have the lowest Root mean Squared error.
+From the above plot n=11 seems to have the lowest Root mean Squared error.
 
 Now, use the recursive partitioning Trees alogorithm, a type of decision trees methos.
 ```{r, warning=FALSE}
@@ -152,7 +152,7 @@ accuracy_GLM <- sumGLM/length
 
 accuracy_rfMod; accuracy_Gbm; accuracy_KNN; accuracy_RPART; accuracy_GLM
 ```
-From the above algorithm accuracies, GBM and Rpart scored the best with 86%, then random forest with 72%.
+From the above algorithm accuracies, GBM and Rpart scored the best with 86%, then random forest with 74%.
 
 
 ```{r}
@@ -278,22 +278,14 @@ ggplot(data = x1_2plus_lands_counts, aes(x=actionReaction, y=SecondsLastRoundAct
 ```
 
 ***
-The above bar chart isn't really showing a lot that explains better than the table, X1_2plus_lands_X1.
+The above bar chart shows that the combo used by Nunez was a jab and cross for the double hits landed on Rousey and Tate, but not on Pennington.
 ```{r}
 X1_2plus_lands_X1[,c(2,6,7:34)]
 ```
 
-***
-Looking at the above table, all the sequential actions are in the first sequence. The initial code has to be examined to determine why two actions are in one instance and the first sequence only. The jab and then the cross are fine for sequence 1 then sequence 2, but the knee and kick both in sequence 1 has to be examined to find the error in the Pennington rounds.
-```{r}
-Vulfen1[c(77,93),]
-```
 
-Looking at the above, this instance actually is only one hit landed, the way the regex was used in grabbing the actions, it selected the 'land.*knee' when it was a description of body location. In further action and reaction commentary the body location of hit could be omitted or change the knee strike column name of action to 'kneeStrike' to solve this problem.
-
-We will omit the Pennington entries for now and plot the results.
 ```{r}
-plot2plus <- subset(x1_2plus_lands_counts, x1_2plus_lands_counts$Notes != 'Pennington')
+plot2plus <- x1_2plus_lands_counts # originally REGEX error x1_2plus_lands_counts$Notes != 'Pennington')
 plot2plus
 ```
 
